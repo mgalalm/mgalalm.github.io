@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>drupal 7 on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/drupal-7/</link>
+    <link>https://mgalalm.github.io/tags/drupal-7/</link>
     <description>Recent content in drupal 7 on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jun 2020 21:12:07 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/drupal-7/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/drupal-7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>cPanel Update Drupal7 Contrib Module</title>
-      <link>mgalalm.github.io/posts/cpanel-update-drupal7-module/</link>
+      <link>https://mgalalm.github.io/posts/cpanel-update-drupal7-module/</link>
       <pubDate>Sat, 06 Jun 2020 21:12:07 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/cpanel-update-drupal7-module/</guid>
+      <guid>https://mgalalm.github.io/posts/cpanel-update-drupal7-module/</guid>
       <description>&lt;p&gt;I can’t imagine using drupal contrib modules without keeping them fresh. This post will walk you through all the steps you need to do to get your contrib module updated through the powerful cPanel.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Update Drupal 7 Core via cPanel</title>
-      <link>mgalalm.github.io/posts/cpanel-update-drupal7-core/</link>
+      <link>https://mgalalm.github.io/posts/cpanel-update-drupal7-core/</link>
       <pubDate>Sat, 06 Jun 2020 20:11:01 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/cpanel-update-drupal7-core/</guid>
+      <guid>https://mgalalm.github.io/posts/cpanel-update-drupal7-core/</guid>
       <description>&lt;p&gt;The quickest road to update drupal through cPanel, consists of the following steps:&lt;/p&gt;</description>
     </item>
     

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>network on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/network/</link>
+    <link>https://mgalalm.github.io/tags/network/</link>
     <description>Recent content in network on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Oct 2020 21:41:52 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>IPV6 Benfits</title>
-      <link>mgalalm.github.io/posts/ipv6-benfits/</link>
+      <link>https://mgalalm.github.io/posts/ipv6-benfits/</link>
       <pubDate>Thu, 01 Oct 2020 21:41:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/ipv6-benfits/</guid>
+      <guid>https://mgalalm.github.io/posts/ipv6-benfits/</guid>
       <description>IPV6 protocol offers several benefits over IPV4, as its ability to handle packets more efficiently, boost performance, and security improvement.</description>
     </item>
     
     <item>
       <title>Combine Multiple Internet Connection</title>
-      <link>mgalalm.github.io/posts/combine-multiple-internet-connection/</link>
+      <link>https://mgalalm.github.io/posts/combine-multiple-internet-connection/</link>
       <pubDate>Mon, 15 Jun 2020 23:54:33 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/combine-multiple-internet-connection/</guid>
+      <guid>https://mgalalm.github.io/posts/combine-multiple-internet-connection/</guid>
       <description>&lt;p&gt;Say you have multiple unlimited 3/4 G network, but you can use one at time, you need to get then most of both of them&lt;/p&gt;</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IM on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/im/</link>
+    <link>https://mgalalm.github.io/tags/im/</link>
     <description>Recent content in IM on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jun 2020 19:34:49 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/im/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/im/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Use WhatsApp as a Reminder</title>
-      <link>mgalalm.github.io/posts/whatsapp-im-reminder/</link>
+      <link>https://mgalalm.github.io/posts/whatsapp-im-reminder/</link>
       <pubDate>Fri, 19 Jun 2020 19:34:49 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/whatsapp-im-reminder/</guid>
+      <guid>https://mgalalm.github.io/posts/whatsapp-im-reminder/</guid>
       <description>&lt;p&gt;Send yourself a reminder of an upcoming event or a to-do using &lt;a href=&#34;https://www.any.do/&#34;&gt;Any.do&lt;/a&gt; app bot&lt;/p&gt;</description>
     </item>
     

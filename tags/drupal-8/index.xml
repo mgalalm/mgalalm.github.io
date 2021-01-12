@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>drupal 8 on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/drupal-8/</link>
+    <link>https://mgalalm.github.io/tags/drupal-8/</link>
     <description>Recent content in drupal 8 on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Jun 2020 23:07:28 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/drupal-8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/drupal-8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Code generation using drupal console</title>
-      <link>mgalalm.github.io/posts/code-generation-drupal/</link>
+      <link>https://mgalalm.github.io/posts/code-generation-drupal/</link>
       <pubDate>Wed, 10 Jun 2020 23:07:28 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/code-generation-drupal/</guid>
+      <guid>https://mgalalm.github.io/posts/code-generation-drupal/</guid>
       <description>&lt;p&gt;Like symfony console, drupal console offers a dozens of commands for generating modules and boilerplate code in the drupal ecosystem, among those commands are the following:&lt;/p&gt;</description>
     </item>
     

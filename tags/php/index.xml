@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>php on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/php/</link>
+    <link>https://mgalalm.github.io/tags/php/</link>
     <description>Recent content in php on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jun 2020 00:56:02 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python for PHP developers part-1</title>
-      <link>mgalalm.github.io/posts/python-for-php-developers-part-1.md/</link>
+      <link>https://mgalalm.github.io/posts/python-for-php-developers-part-1.md/</link>
       <pubDate>Sun, 28 Jun 2020 00:56:02 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/python-for-php-developers-part-1.md/</guid>
+      <guid>https://mgalalm.github.io/posts/python-for-php-developers-part-1.md/</guid>
       <description>How does Python differ from PHP? Variables in Python vs PHP Unlike php there is no special characters to signifies a variable in python,</description>
     </item>
     

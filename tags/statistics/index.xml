@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/statistics/</link>
+    <link>https://mgalalm.github.io/tags/statistics/</link>
     <description>Recent content in Statistics on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Jul 2020 12:35:10 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Regression to the Mean</title>
-      <link>mgalalm.github.io/posts/regression-to-the-mean/</link>
+      <link>https://mgalalm.github.io/posts/regression-to-the-mean/</link>
       <pubDate>Sun, 26 Jul 2020 12:35:10 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/regression-to-the-mean/</guid>
+      <guid>https://mgalalm.github.io/posts/regression-to-the-mean/</guid>
       <description>&lt;p&gt;Regression toward (or to) the mean is the phenomenon that arises if a sample of a random variable is extreme, a future sample will be closer to the mean or average on further measurements&lt;/p&gt;</description>
     </item>
     

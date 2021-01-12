@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SEO on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/seo/</link>
+    <link>https://mgalalm.github.io/tags/seo/</link>
     <description>Recent content in SEO on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 May 2020 22:29:24 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/seo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Submit Sitemap to Google</title>
-      <link>mgalalm.github.io/posts/how-to-submit-sitemap-to-google/</link>
+      <link>https://mgalalm.github.io/posts/how-to-submit-sitemap-to-google/</link>
       <pubDate>Thu, 14 May 2020 22:29:24 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/how-to-submit-sitemap-to-google/</guid>
+      <guid>https://mgalalm.github.io/posts/how-to-submit-sitemap-to-google/</guid>
       <description>&lt;p&gt;To follow along with the following steps, you should have submitted your website to Google already.&lt;/p&gt;</description>
     </item>
     

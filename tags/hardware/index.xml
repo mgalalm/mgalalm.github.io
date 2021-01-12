@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hardware on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/hardware/</link>
+    <link>https://mgalalm.github.io/tags/hardware/</link>
     <description>Recent content in hardware on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Oct 2020 14:08:31 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Centralized Storage</title>
-      <link>mgalalm.github.io/posts/centralized-storage/</link>
+      <link>https://mgalalm.github.io/posts/centralized-storage/</link>
       <pubDate>Sun, 18 Oct 2020 14:08:31 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/centralized-storage/</guid>
+      <guid>https://mgalalm.github.io/posts/centralized-storage/</guid>
       <description>Before we get into centralized storage, we should touch on the classic storage DAS.
 DAS (Direct Attached Storage), is the traditional storage type; as the name itself implies it refers to storage which is dedicated to the use of the computer of server, like this disk integrated in your laptop or PC.</description>
     </item>
     
     <item>
       <title>Hyper Threading</title>
-      <link>mgalalm.github.io/posts/hyper-threading/</link>
+      <link>https://mgalalm.github.io/posts/hyper-threading/</link>
       <pubDate>Sun, 18 Oct 2020 11:41:42 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/hyper-threading/</guid>
+      <guid>https://mgalalm.github.io/posts/hyper-threading/</guid>
       <description>Hyper-threading (HT) is a proprietary technology developed by Intel that boosts the parallelization of computations carried out on x86 processors.</description>
     </item>
     
     <item>
       <title>Storage Media Types</title>
-      <link>mgalalm.github.io/posts/storage-med%D9%87a-types/</link>
+      <link>https://mgalalm.github.io/posts/storage-med%D9%87a-types/</link>
       <pubDate>Sat, 17 Oct 2020 20:43:42 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/storage-med%D9%87a-types/</guid>
+      <guid>https://mgalalm.github.io/posts/storage-med%D9%87a-types/</guid>
       <description>SAS VS SATA SAS and SATA are two technologies used to ferry instruction and data from the motherboard to a storage drive.</description>
     </item>
     
     <item>
       <title>Advantages of Centralized Storage </title>
-      <link>mgalalm.github.io/posts/advanatges-of-centralized-storage-/</link>
+      <link>https://mgalalm.github.io/posts/advanatges-of-centralized-storage-/</link>
       <pubDate>Sat, 17 Oct 2020 17:25:30 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/advanatges-of-centralized-storage-/</guid>
+      <guid>https://mgalalm.github.io/posts/advanatges-of-centralized-storage-/</guid>
       <description>Disk Utilization Thin provisioning Thin provisioning provides a means by which makes the storage appear to the servers that they have more storage than you have paid.</description>
     </item>
     

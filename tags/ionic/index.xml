@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ionic on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/ionic/</link>
+    <link>https://mgalalm.github.io/tags/ionic/</link>
     <description>Recent content in ionic on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jul 2020 22:32:26 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/ionic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/ionic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ionic 4 Slide Drawer</title>
-      <link>mgalalm.github.io/posts/ionic-slide-drawer/</link>
+      <link>https://mgalalm.github.io/posts/ionic-slide-drawer/</link>
       <pubDate>Wed, 29 Jul 2020 22:32:26 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/ionic-slide-drawer/</guid>
+      <guid>https://mgalalm.github.io/posts/ionic-slide-drawer/</guid>
       <description>&lt;p&gt;Creating a side menu is a simple affair in ionic, just follow these simple steps:&lt;/p&gt;
 &lt;p&gt;In your in your root component, &amp;ldquo;app.component.html&amp;rdquo; add the below code as sibling to ion-router-outlet&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Show and Hide Slider Controls with Ionic</title>
-      <link>mgalalm.github.io/posts/show-hide-slider-controls-ionic/</link>
+      <link>https://mgalalm.github.io/posts/show-hide-slider-controls-ionic/</link>
       <pubDate>Wed, 17 Jun 2020 23:53:15 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/show-hide-slider-controls-ionic/</guid>
+      <guid>https://mgalalm.github.io/posts/show-hide-slider-controls-ionic/</guid>
       <description>&lt;p&gt;We have a slider composed of 3 slides, obviously we need to hide the previous button in the first slide and next button in the last slide&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>FormArray vs FormGroup</title>
-      <link>mgalalm.github.io/posts/formarrayvsformgroup/</link>
+      <link>https://mgalalm.github.io/posts/formarrayvsformgroup/</link>
       <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/formarrayvsformgroup/</guid>
+      <guid>https://mgalalm.github.io/posts/formarrayvsformgroup/</guid>
       <description>&lt;p&gt;The important distinction between FormGroup and FormArray is that the data of the later serialized as an array&lt;/p&gt;</description>
     </item>
     

@@ -2,462 +2,462 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/</link>
+    <link>https://mgalalm.github.io/tags/</link>
     <description>Recent content in Tags on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Oct 2020 19:33:39 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>storage</title>
-      <link>mgalalm.github.io/tags/storage/</link>
+      <link>https://mgalalm.github.io/tags/storage/</link>
       <pubDate>Mon, 19 Oct 2020 19:33:39 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/storage/</guid>
+      <guid>https://mgalalm.github.io/tags/storage/</guid>
       <description></description>
     </item>
     
     <item>
       <title>virtualization</title>
-      <link>mgalalm.github.io/tags/virtualization/</link>
+      <link>https://mgalalm.github.io/tags/virtualization/</link>
       <pubDate>Mon, 19 Oct 2020 19:33:39 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/virtualization/</guid>
+      <guid>https://mgalalm.github.io/tags/virtualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>devops</title>
-      <link>mgalalm.github.io/tags/devops/</link>
+      <link>https://mgalalm.github.io/tags/devops/</link>
       <pubDate>Sun, 18 Oct 2020 17:25:18 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/devops/</guid>
+      <guid>https://mgalalm.github.io/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vmware</title>
-      <link>mgalalm.github.io/tags/vmware/</link>
+      <link>https://mgalalm.github.io/tags/vmware/</link>
       <pubDate>Sun, 18 Oct 2020 17:25:18 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/vmware/</guid>
+      <guid>https://mgalalm.github.io/tags/vmware/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cloud</title>
-      <link>mgalalm.github.io/tags/cloud/</link>
+      <link>https://mgalalm.github.io/tags/cloud/</link>
       <pubDate>Sun, 18 Oct 2020 14:08:31 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/cloud/</guid>
+      <guid>https://mgalalm.github.io/tags/cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hardware</title>
-      <link>mgalalm.github.io/tags/hardware/</link>
+      <link>https://mgalalm.github.io/tags/hardware/</link>
       <pubDate>Sun, 18 Oct 2020 14:08:31 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/hardware/</guid>
+      <guid>https://mgalalm.github.io/tags/hardware/</guid>
       <description></description>
     </item>
     
     <item>
       <title>network</title>
-      <link>mgalalm.github.io/tags/network/</link>
+      <link>https://mgalalm.github.io/tags/network/</link>
       <pubDate>Thu, 01 Oct 2020 21:41:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/network/</guid>
+      <guid>https://mgalalm.github.io/tags/network/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Candlesticks</title>
-      <link>mgalalm.github.io/tags/candlesticks/</link>
+      <link>https://mgalalm.github.io/tags/candlesticks/</link>
       <pubDate>Sun, 20 Sep 2020 19:37:18 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/candlesticks/</guid>
+      <guid>https://mgalalm.github.io/tags/candlesticks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stock Market</title>
-      <link>mgalalm.github.io/tags/stock-market/</link>
+      <link>https://mgalalm.github.io/tags/stock-market/</link>
       <pubDate>Sun, 20 Sep 2020 19:37:18 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/stock-market/</guid>
+      <guid>https://mgalalm.github.io/tags/stock-market/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thinking Fallacies</title>
-      <link>mgalalm.github.io/tags/thinking-fallacies/</link>
+      <link>https://mgalalm.github.io/tags/thinking-fallacies/</link>
       <pubDate>Tue, 08 Sep 2020 22:06:49 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/thinking-fallacies/</guid>
+      <guid>https://mgalalm.github.io/tags/thinking-fallacies/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>mgalalm.github.io/tags/python/</link>
+      <link>https://mgalalm.github.io/tags/python/</link>
       <pubDate>Tue, 25 Aug 2020 21:31:13 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/python/</guid>
+      <guid>https://mgalalm.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ionic</title>
-      <link>mgalalm.github.io/tags/ionic/</link>
+      <link>https://mgalalm.github.io/tags/ionic/</link>
       <pubDate>Wed, 29 Jul 2020 22:32:26 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/ionic/</guid>
+      <guid>https://mgalalm.github.io/tags/ionic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistics</title>
-      <link>mgalalm.github.io/tags/statistics/</link>
+      <link>https://mgalalm.github.io/tags/statistics/</link>
       <pubDate>Sun, 26 Jul 2020 12:35:10 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/statistics/</guid>
+      <guid>https://mgalalm.github.io/tags/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Raspberry Pi</title>
-      <link>mgalalm.github.io/tags/raspberry-pi/</link>
+      <link>https://mgalalm.github.io/tags/raspberry-pi/</link>
       <pubDate>Fri, 10 Jul 2020 20:14:45 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/raspberry-pi/</guid>
+      <guid>https://mgalalm.github.io/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>automation</title>
-      <link>mgalalm.github.io/tags/automation/</link>
+      <link>https://mgalalm.github.io/tags/automation/</link>
       <pubDate>Thu, 02 Jul 2020 20:26:05 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/automation/</guid>
+      <guid>https://mgalalm.github.io/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WebdriverIO</title>
-      <link>mgalalm.github.io/tags/webdriverio/</link>
+      <link>https://mgalalm.github.io/tags/webdriverio/</link>
       <pubDate>Thu, 02 Jul 2020 20:26:05 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/webdriverio/</guid>
+      <guid>https://mgalalm.github.io/tags/webdriverio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>chrome</title>
-      <link>mgalalm.github.io/tags/chrome/</link>
+      <link>https://mgalalm.github.io/tags/chrome/</link>
       <pubDate>Wed, 01 Jul 2020 00:53:46 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/chrome/</guid>
+      <guid>https://mgalalm.github.io/tags/chrome/</guid>
       <description></description>
     </item>
     
     <item>
       <title>online-tools</title>
-      <link>mgalalm.github.io/tags/online-tools/</link>
+      <link>https://mgalalm.github.io/tags/online-tools/</link>
       <pubDate>Wed, 01 Jul 2020 00:53:46 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/online-tools/</guid>
+      <guid>https://mgalalm.github.io/tags/online-tools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>php</title>
-      <link>mgalalm.github.io/tags/php/</link>
+      <link>https://mgalalm.github.io/tags/php/</link>
       <pubDate>Sun, 28 Jun 2020 00:56:02 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/php/</guid>
+      <guid>https://mgalalm.github.io/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>salesforce</title>
-      <link>mgalalm.github.io/tags/salesforce/</link>
+      <link>https://mgalalm.github.io/tags/salesforce/</link>
       <pubDate>Sun, 21 Jun 2020 23:01:47 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/salesforce/</guid>
+      <guid>https://mgalalm.github.io/tags/salesforce/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mac</title>
-      <link>mgalalm.github.io/tags/mac/</link>
+      <link>https://mgalalm.github.io/tags/mac/</link>
       <pubDate>Sat, 20 Jun 2020 14:38:51 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/mac/</guid>
+      <guid>https://mgalalm.github.io/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>mgalalm.github.io/tags/hugo/</link>
+      <link>https://mgalalm.github.io/tags/hugo/</link>
       <pubDate>Fri, 19 Jun 2020 20:18:49 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/hugo/</guid>
+      <guid>https://mgalalm.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apps</title>
-      <link>mgalalm.github.io/tags/apps/</link>
+      <link>https://mgalalm.github.io/tags/apps/</link>
       <pubDate>Fri, 19 Jun 2020 19:34:49 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/apps/</guid>
+      <guid>https://mgalalm.github.io/tags/apps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IM</title>
-      <link>mgalalm.github.io/tags/im/</link>
+      <link>https://mgalalm.github.io/tags/im/</link>
       <pubDate>Fri, 19 Jun 2020 19:34:49 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/im/</guid>
+      <guid>https://mgalalm.github.io/tags/im/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lifestyle</title>
-      <link>mgalalm.github.io/tags/lifestyle/</link>
+      <link>https://mgalalm.github.io/tags/lifestyle/</link>
       <pubDate>Thu, 11 Jun 2020 21:02:41 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/lifestyle/</guid>
+      <guid>https://mgalalm.github.io/tags/lifestyle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>drupal</title>
-      <link>mgalalm.github.io/tags/drupal/</link>
+      <link>https://mgalalm.github.io/tags/drupal/</link>
       <pubDate>Wed, 10 Jun 2020 23:07:28 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/drupal/</guid>
+      <guid>https://mgalalm.github.io/tags/drupal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>drupal 8</title>
-      <link>mgalalm.github.io/tags/drupal-8/</link>
+      <link>https://mgalalm.github.io/tags/drupal-8/</link>
       <pubDate>Wed, 10 Jun 2020 23:07:28 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/drupal-8/</guid>
+      <guid>https://mgalalm.github.io/tags/drupal-8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>drupal console</title>
-      <link>mgalalm.github.io/tags/drupal-console/</link>
+      <link>https://mgalalm.github.io/tags/drupal-console/</link>
       <pubDate>Wed, 10 Jun 2020 23:07:28 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/drupal-console/</guid>
+      <guid>https://mgalalm.github.io/tags/drupal-console/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cPanel</title>
-      <link>mgalalm.github.io/tags/cpanel/</link>
+      <link>https://mgalalm.github.io/tags/cpanel/</link>
       <pubDate>Sat, 06 Jun 2020 21:12:07 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/cpanel/</guid>
+      <guid>https://mgalalm.github.io/tags/cpanel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>drupal 7</title>
-      <link>mgalalm.github.io/tags/drupal-7/</link>
+      <link>https://mgalalm.github.io/tags/drupal-7/</link>
       <pubDate>Sat, 06 Jun 2020 21:12:07 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/drupal-7/</guid>
+      <guid>https://mgalalm.github.io/tags/drupal-7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BBQ</title>
-      <link>mgalalm.github.io/tags/bbq/</link>
+      <link>https://mgalalm.github.io/tags/bbq/</link>
       <pubDate>Mon, 01 Jun 2020 12:14:54 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/bbq/</guid>
+      <guid>https://mgalalm.github.io/tags/bbq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cooking</title>
-      <link>mgalalm.github.io/tags/cooking/</link>
+      <link>https://mgalalm.github.io/tags/cooking/</link>
       <pubDate>Mon, 01 Jun 2020 12:14:54 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/cooking/</guid>
+      <guid>https://mgalalm.github.io/tags/cooking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>recipe</title>
-      <link>mgalalm.github.io/tags/recipe/</link>
+      <link>https://mgalalm.github.io/tags/recipe/</link>
       <pubDate>Mon, 01 Jun 2020 12:14:54 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/recipe/</guid>
+      <guid>https://mgalalm.github.io/tags/recipe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>groovy</title>
-      <link>mgalalm.github.io/tags/groovy/</link>
+      <link>https://mgalalm.github.io/tags/groovy/</link>
       <pubDate>Sun, 31 May 2020 16:56:29 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/groovy/</guid>
+      <guid>https://mgalalm.github.io/tags/groovy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jenkins</title>
-      <link>mgalalm.github.io/tags/jenkins/</link>
+      <link>https://mgalalm.github.io/tags/jenkins/</link>
       <pubDate>Sun, 31 May 2020 16:56:29 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/jenkins/</guid>
+      <guid>https://mgalalm.github.io/tags/jenkins/</guid>
       <description></description>
     </item>
     
     <item>
       <title>party</title>
-      <link>mgalalm.github.io/tags/party/</link>
+      <link>https://mgalalm.github.io/tags/party/</link>
       <pubDate>Wed, 27 May 2020 19:33:11 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/party/</guid>
+      <guid>https://mgalalm.github.io/tags/party/</guid>
       <description></description>
     </item>
     
     <item>
       <title>selenium</title>
-      <link>mgalalm.github.io/tags/selenium/</link>
+      <link>https://mgalalm.github.io/tags/selenium/</link>
       <pubDate>Tue, 26 May 2020 01:23:35 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/selenium/</guid>
+      <guid>https://mgalalm.github.io/tags/selenium/</guid>
       <description></description>
     </item>
     
     <item>
       <title>health</title>
-      <link>mgalalm.github.io/tags/health/</link>
+      <link>https://mgalalm.github.io/tags/health/</link>
       <pubDate>Sat, 23 May 2020 16:17:05 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/health/</guid>
+      <guid>https://mgalalm.github.io/tags/health/</guid>
       <description></description>
     </item>
     
     <item>
       <title>iOS</title>
-      <link>mgalalm.github.io/tags/ios/</link>
+      <link>https://mgalalm.github.io/tags/ios/</link>
       <pubDate>Wed, 20 May 2020 01:25:56 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/ios/</guid>
+      <guid>https://mgalalm.github.io/tags/ios/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ms</title>
-      <link>mgalalm.github.io/tags/ms/</link>
+      <link>https://mgalalm.github.io/tags/ms/</link>
       <pubDate>Mon, 18 May 2020 02:06:12 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/ms/</guid>
+      <guid>https://mgalalm.github.io/tags/ms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>outlook</title>
-      <link>mgalalm.github.io/tags/outlook/</link>
+      <link>https://mgalalm.github.io/tags/outlook/</link>
       <pubDate>Mon, 18 May 2020 02:06:12 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/outlook/</guid>
+      <guid>https://mgalalm.github.io/tags/outlook/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vs code</title>
-      <link>mgalalm.github.io/tags/vs-code/</link>
+      <link>https://mgalalm.github.io/tags/vs-code/</link>
       <pubDate>Sun, 17 May 2020 22:18:10 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/vs-code/</guid>
+      <guid>https://mgalalm.github.io/tags/vs-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SEO</title>
-      <link>mgalalm.github.io/tags/seo/</link>
+      <link>https://mgalalm.github.io/tags/seo/</link>
       <pubDate>Thu, 14 May 2020 22:29:24 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/seo/</guid>
+      <guid>https://mgalalm.github.io/tags/seo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>productivity</title>
-      <link>mgalalm.github.io/tags/productivity/</link>
+      <link>https://mgalalm.github.io/tags/productivity/</link>
       <pubDate>Wed, 13 May 2020 23:26:56 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/productivity/</guid>
+      <guid>https://mgalalm.github.io/tags/productivity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>instant pot</title>
-      <link>mgalalm.github.io/tags/instant-pot/</link>
+      <link>https://mgalalm.github.io/tags/instant-pot/</link>
       <pubDate>Tue, 12 May 2020 22:22:22 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/instant-pot/</guid>
+      <guid>https://mgalalm.github.io/tags/instant-pot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>angular</title>
-      <link>mgalalm.github.io/tags/angular/</link>
+      <link>https://mgalalm.github.io/tags/angular/</link>
       <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/angular/</guid>
+      <guid>https://mgalalm.github.io/tags/angular/</guid>
       <description></description>
     </item>
     
     <item>
       <title>browser</title>
-      <link>mgalalm.github.io/tags/browser/</link>
+      <link>https://mgalalm.github.io/tags/browser/</link>
       <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/browser/</guid>
+      <guid>https://mgalalm.github.io/tags/browser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>mgalalm.github.io/tags/git/</link>
+      <link>https://mgalalm.github.io/tags/git/</link>
       <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/git/</guid>
+      <guid>https://mgalalm.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MS-Office</title>
-      <link>mgalalm.github.io/tags/ms-office/</link>
+      <link>https://mgalalm.github.io/tags/ms-office/</link>
       <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/ms-office/</guid>
+      <guid>https://mgalalm.github.io/tags/ms-office/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spreadsheet</title>
-      <link>mgalalm.github.io/tags/spreadsheet/</link>
+      <link>https://mgalalm.github.io/tags/spreadsheet/</link>
       <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/tags/spreadsheet/</guid>
+      <guid>https://mgalalm.github.io/tags/spreadsheet/</guid>
       <description></description>
     </item>
     
