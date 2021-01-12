@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mgalalm.github.io/</loc>
+    <lastmod>2020-10-19T19:33:39+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mgalalm.github.io/posts/</loc>
     <lastmod>2020-10-19T19:33:39+01:00</lastmod>
   </url>
@@ -24,11 +29,6 @@
   
   <url>
     <loc>https://mgalalm.github.io/tags/virtualization/</loc>
-    <lastmod>2020-10-19T19:33:39+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mgalalm.github.io/</loc>
     <lastmod>2020-10-19T19:33:39+01:00</lastmod>
   </url>
   
