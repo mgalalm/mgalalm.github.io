@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>spreadsheet on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/spreadsheet/</link>
+    <link>https://mgalalm.github.io/tags/spreadsheet/</link>
     <description>Recent content in spreadsheet on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Apr 2020 21:20:52 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/spreadsheet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/spreadsheet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sticky spreadsheet header</title>
-      <link>mgalalm.github.io/posts/long-scrolling-spreadsheet/</link>
+      <link>https://mgalalm.github.io/posts/long-scrolling-spreadsheet/</link>
       <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/long-scrolling-spreadsheet/</guid>
+      <guid>https://mgalalm.github.io/posts/long-scrolling-spreadsheet/</guid>
       <description>&lt;p&gt;In case you have a long scrolling spreadsheet, and keeping the headers matters you, use &amp;ldquo;Freeze panes&amp;rdquo; option to get your headers to stick around when you scroll down through rows of data.&lt;/p&gt;</description>
     </item>
     

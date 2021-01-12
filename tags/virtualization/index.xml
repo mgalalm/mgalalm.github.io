@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>virtualization on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/virtualization/</link>
+    <link>https://mgalalm.github.io/tags/virtualization/</link>
     <description>Recent content in virtualization on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Oct 2020 19:33:39 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Thick Provisioning vs Thin Provisioning</title>
-      <link>mgalalm.github.io/posts/thick-provisioning-vs-thin-provisioning/</link>
+      <link>https://mgalalm.github.io/posts/thick-provisioning-vs-thin-provisioning/</link>
       <pubDate>Mon, 19 Oct 2020 19:33:39 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/thick-provisioning-vs-thin-provisioning/</guid>
+      <guid>https://mgalalm.github.io/posts/thick-provisioning-vs-thin-provisioning/</guid>
       <description>When you create a virtual machine, you have to elect storage, and you have two options, thick and thin, so what are thick provisioning and thin provisioning, and how they differ.</description>
     </item>
     
     <item>
       <title>Virtual Machine Files</title>
-      <link>mgalalm.github.io/posts/virtual-machine-files/</link>
+      <link>https://mgalalm.github.io/posts/virtual-machine-files/</link>
       <pubDate>Sun, 18 Oct 2020 17:25:18 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/virtual-machine-files/</guid>
+      <guid>https://mgalalm.github.io/posts/virtual-machine-files/</guid>
       <description>Virtual machine itself consists of multiple files that reside on the data store itself.
 Global virtual machine files.</description>
     </item>
     
     <item>
       <title>Limit CPU Features to Virtual Machine</title>
-      <link>mgalalm.github.io/posts/limit-cpu-features-virtual-machines/</link>
+      <link>https://mgalalm.github.io/posts/limit-cpu-features-virtual-machines/</link>
       <pubDate>Sun, 18 Oct 2020 13:47:51 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/limit-cpu-features-virtual-machines/</guid>
+      <guid>https://mgalalm.github.io/posts/limit-cpu-features-virtual-machines/</guid>
       <description>You can mask some of the CPU features to not be exposed to the virtual machine; a common example is &amp;ldquo;AMD No eXecute (NX)&amp;rdquo; and &amp;ldquo;Intel eXecute Disable (XD)&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Hyper Threading</title>
-      <link>mgalalm.github.io/posts/hyper-threading/</link>
+      <link>https://mgalalm.github.io/posts/hyper-threading/</link>
       <pubDate>Sun, 18 Oct 2020 11:41:42 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/hyper-threading/</guid>
+      <guid>https://mgalalm.github.io/posts/hyper-threading/</guid>
       <description>Hyper-threading (HT) is a proprietary technology developed by Intel that boosts the parallelization of computations carried out on x86 processors.</description>
     </item>
     
     <item>
       <title>What Is Esxi Host</title>
-      <link>mgalalm.github.io/posts/what-is-esxi-host/</link>
+      <link>https://mgalalm.github.io/posts/what-is-esxi-host/</link>
       <pubDate>Sat, 17 Oct 2020 23:31:12 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/what-is-esxi-host/</guid>
+      <guid>https://mgalalm.github.io/posts/what-is-esxi-host/</guid>
       <description>ESXi host is the actual physical server that the virtual machines will run on. ESXi is the operating system that we install on this physical server.</description>
     </item>
     
     <item>
       <title>Software Defined Data Center SDDC</title>
-      <link>mgalalm.github.io/posts/software-defined-data-center-sddc/</link>
+      <link>https://mgalalm.github.io/posts/software-defined-data-center-sddc/</link>
       <pubDate>Fri, 16 Oct 2020 20:49:46 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/software-defined-data-center-sddc/</guid>
+      <guid>https://mgalalm.github.io/posts/software-defined-data-center-sddc/</guid>
       <description>What is software-defined data center? The software-defined data center approach extends industry-leading virtualization beyond computing, network and storage, making data center services painless in terms of configuration and managing virtual machines.</description>
     </item>
     

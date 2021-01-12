@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mac on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/mac/</link>
+    <link>https://mgalalm.github.io/tags/mac/</link>
     <description>Recent content in mac on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jun 2020 14:38:51 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dress Up Your Mac Charger</title>
-      <link>mgalalm.github.io/posts/dress-up-your-mac-charger/</link>
+      <link>https://mgalalm.github.io/posts/dress-up-your-mac-charger/</link>
       <pubDate>Sat, 20 Jun 2020 14:38:51 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/dress-up-your-mac-charger/</guid>
+      <guid>https://mgalalm.github.io/posts/dress-up-your-mac-charger/</guid>
       <description>&lt;p&gt;Once everyone at the office has the same mac machine, and some of them shares with you the extension cable, differentiate your mac charger with a swanky sticker from The Grommet.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Combine Multiple Internet Connection</title>
-      <link>mgalalm.github.io/posts/combine-multiple-internet-connection/</link>
+      <link>https://mgalalm.github.io/posts/combine-multiple-internet-connection/</link>
       <pubDate>Mon, 15 Jun 2020 23:54:33 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/combine-multiple-internet-connection/</guid>
+      <guid>https://mgalalm.github.io/posts/combine-multiple-internet-connection/</guid>
       <description>&lt;p&gt;Say you have multiple unlimited 3/4 G network, but you can use one at time, you need to get then most of both of them&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>On Switching From Mac to RaspberryPi</title>
-      <link>mgalalm.github.io/posts/on-switching-from-mac-to-raspberrypi/</link>
+      <link>https://mgalalm.github.io/posts/on-switching-from-mac-to-raspberrypi/</link>
       <pubDate>Sun, 14 Jun 2020 13:09:19 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/on-switching-from-mac-to-raspberrypi/</guid>
+      <guid>https://mgalalm.github.io/posts/on-switching-from-mac-to-raspberrypi/</guid>
       <description>&lt;p&gt;A photo-journalist based in West Yorkshire Peter Garner recently replaced his Mac mini with a Raspberry Pi, and he&amp;rsquo;s got some interesting insights into the process.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to Install iOS 13 Beta Profile</title>
-      <link>mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</link>
+      <link>https://mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</link>
       <pubDate>Wed, 20 May 2020 01:25:56 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</guid>
+      <guid>https://mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</guid>
       <description>&lt;p&gt;iOS releases a major free update annually in June, that being said it wont be available for public access up till September.&lt;/p&gt;
 &lt;p&gt;But what if you can&amp;rsquo;t wait to shake the new killer features out?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Outlook Multiple Time Zone</title>
-      <link>mgalalm.github.io/posts/outlook-multiple-time-zone/</link>
+      <link>https://mgalalm.github.io/posts/outlook-multiple-time-zone/</link>
       <pubDate>Mon, 18 May 2020 02:06:12 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/outlook-multiple-time-zone/</guid>
+      <guid>https://mgalalm.github.io/posts/outlook-multiple-time-zone/</guid>
       <description>&lt;p&gt;MS outlook supports multiple time zones for appointments. The following is a list of the steps of how to enable this on MacOs:&lt;/p&gt;</description>
     </item>
     

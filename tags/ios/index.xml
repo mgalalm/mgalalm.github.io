@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>iOS on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/ios/</link>
+    <link>https://mgalalm.github.io/tags/ios/</link>
     <description>Recent content in iOS on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 May 2020 01:25:56 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Install iOS 13 Beta Profile</title>
-      <link>mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</link>
+      <link>https://mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</link>
       <pubDate>Wed, 20 May 2020 01:25:56 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</guid>
+      <guid>https://mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</guid>
       <description>&lt;p&gt;iOS releases a major free update annually in June, that being said it wont be available for public access up till September.&lt;/p&gt;
 &lt;p&gt;But what if you can&amp;rsquo;t wait to shake the new killer features out?&lt;/p&gt;</description>
     </item>

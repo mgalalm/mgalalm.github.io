@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>groovy on Yak Shaving</title>
-    <link>mgalalm.github.io/tags/groovy/</link>
+    <link>https://mgalalm.github.io/tags/groovy/</link>
     <description>Recent content in groovy on Yak Shaving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 May 2020 16:56:29 +0100</lastBuildDate>
     
-	<atom:link href="mgalalm.github.io/tags/groovy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgalalm.github.io/tags/groovy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Working With Plugins Scripted Jenkins</title>
-      <link>mgalalm.github.io/posts/working-with-plugins-jenkins/</link>
+      <link>https://mgalalm.github.io/posts/working-with-plugins-jenkins/</link>
       <pubDate>Sun, 31 May 2020 16:56:29 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/working-with-plugins-jenkins/</guid>
+      <guid>https://mgalalm.github.io/posts/working-with-plugins-jenkins/</guid>
       <description>List all of the plugins you have in your instance We will need to use for loop to iterate over the list of Jenkins.</description>
     </item>
     
     <item>
       <title>NotSerializableException scripted Jenkins</title>
-      <link>mgalalm.github.io/posts/troubleshoot-scripted-jenkins/</link>
+      <link>https://mgalalm.github.io/posts/troubleshoot-scripted-jenkins/</link>
       <pubDate>Sun, 24 May 2020 03:15:22 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/troubleshoot-scripted-jenkins/</guid>
+      <guid>https://mgalalm.github.io/posts/troubleshoot-scripted-jenkins/</guid>
       <description>&lt;p&gt;If you receive NotSerializableException, in your scripted pipeline or share library, there are couple of reasons:&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Continuation Passing Style (CPS)</title>
-      <link>mgalalm.github.io/posts/continuation-passing-style/</link>
+      <link>https://mgalalm.github.io/posts/continuation-passing-style/</link>
       <pubDate>Fri, 15 May 2020 23:25:49 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/continuation-passing-style/</guid>
+      <guid>https://mgalalm.github.io/posts/continuation-passing-style/</guid>
       <description>The scenario when you call a function but also pass another function that is to be executed when the input/output operation is finished, can be considered a case of continuation passing style (CPS)</description>
     </item>
     
     <item>
       <title>What does the [:] signify in groovy?</title>
-      <link>mgalalm.github.io/posts/groovy-speical-sytnax/</link>
+      <link>https://mgalalm.github.io/posts/groovy-speical-sytnax/</link>
       <pubDate>Wed, 13 May 2020 02:17:21 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/groovy-speical-sytnax/</guid>
+      <guid>https://mgalalm.github.io/posts/groovy-speical-sytnax/</guid>
       <description>[:] creates an empty Map
 Java counterpart is
 Object foo = new java.util.LinkedHashMap(); In Groovy we can assign default values to parameters in a method, so using the empty map is handy in this case</description>
@@ -51,10 +51,10 @@ Object foo = new java.util.LinkedHashMap(); In Groovy we can assign default valu
     
     <item>
       <title>Parameterize Jenkins pipeline</title>
-      <link>mgalalm.github.io/posts/paramaterize-jenkins-pipeline-example/</link>
+      <link>https://mgalalm.github.io/posts/paramaterize-jenkins-pipeline-example/</link>
       <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
       
-      <guid>mgalalm.github.io/posts/paramaterize-jenkins-pipeline-example/</guid>
+      <guid>https://mgalalm.github.io/posts/paramaterize-jenkins-pipeline-example/</guid>
       <description>&lt;p&gt;Say you need to have a parameter represents the branch so the developer can execute the build against a branch of their choice&lt;/p&gt;</description>
     </item>
     
