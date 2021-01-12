@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Yak Shaving</title>
+    <link>mgalalm.github.io/posts/</link>
+    <description>Recent content in Posts on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Oct 2020 19:33:39 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thick Provisioning vs Thin Provisioning</title>
+      <link>mgalalm.github.io/posts/thick-provisioning-vs-thin-provisioning/</link>
+      <pubDate>Mon, 19 Oct 2020 19:33:39 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/thick-provisioning-vs-thin-provisioning/</guid>
+      <description>When you create a virtual machine, you have to elect storage, and you have two options, thick and thin, so what are thick provisioning and thin provisioning, and how they differ.</description>
+    </item>
+    
+    <item>
+      <title>Virtual Machine Files</title>
+      <link>mgalalm.github.io/posts/virtual-machine-files/</link>
+      <pubDate>Sun, 18 Oct 2020 17:25:18 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/virtual-machine-files/</guid>
+      <description>Virtual machine itself consists of multiple files that reside on the data store itself.
+Global virtual machine files.</description>
+    </item>
+    
+    <item>
+      <title>Centralized Storage</title>
+      <link>mgalalm.github.io/posts/centralized-storage/</link>
+      <pubDate>Sun, 18 Oct 2020 14:08:31 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/centralized-storage/</guid>
+      <description>Before we get into centralized storage, we should touch on the classic storage DAS.
+DAS (Direct Attached Storage), is the traditional storage type; as the name itself implies it refers to storage which is dedicated to the use of the computer of server, like this disk integrated in your laptop or PC.</description>
+    </item>
+    
+    <item>
+      <title>Limit CPU Features to Virtual Machine</title>
+      <link>mgalalm.github.io/posts/limit-cpu-features-virtual-machines/</link>
+      <pubDate>Sun, 18 Oct 2020 13:47:51 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/limit-cpu-features-virtual-machines/</guid>
+      <description>You can mask some of the CPU features to not be exposed to the virtual machine; a common example is &amp;ldquo;AMD No eXecute (NX)&amp;rdquo; and &amp;ldquo;Intel eXecute Disable (XD)&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Hyper Threading</title>
+      <link>mgalalm.github.io/posts/hyper-threading/</link>
+      <pubDate>Sun, 18 Oct 2020 11:41:42 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/hyper-threading/</guid>
+      <description>Hyper-threading (HT) is a proprietary technology developed by Intel that boosts the parallelization of computations carried out on x86 processors.</description>
+    </item>
+    
+    <item>
+      <title>What Is Esxi Host</title>
+      <link>mgalalm.github.io/posts/what-is-esxi-host/</link>
+      <pubDate>Sat, 17 Oct 2020 23:31:12 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/what-is-esxi-host/</guid>
+      <description>ESXi host is the actual physical server that the virtual machines will run on. ESXi is the operating system that we install on this physical server.</description>
+    </item>
+    
+    <item>
+      <title>Storage Media Types</title>
+      <link>mgalalm.github.io/posts/storage-med%D9%87a-types/</link>
+      <pubDate>Sat, 17 Oct 2020 20:43:42 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/storage-med%D9%87a-types/</guid>
+      <description>SAS VS SATA SAS and SATA are two technologies used to ferry instruction and data from the motherboard to a storage drive.</description>
+    </item>
+    
+    <item>
+      <title>Advantages of Centralized Storage </title>
+      <link>mgalalm.github.io/posts/advanatges-of-centralized-storage-/</link>
+      <pubDate>Sat, 17 Oct 2020 17:25:30 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/advanatges-of-centralized-storage-/</guid>
+      <description>Disk Utilization Thin provisioning Thin provisioning provides a means by which makes the storage appear to the servers that they have more storage than you have paid.</description>
+    </item>
+    
+    <item>
+      <title>Software Defined Data Center SDDC</title>
+      <link>mgalalm.github.io/posts/software-defined-data-center-sddc/</link>
+      <pubDate>Fri, 16 Oct 2020 20:49:46 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/software-defined-data-center-sddc/</guid>
+      <description>What is software-defined data center? The software-defined data center approach extends industry-leading virtualization beyond computing, network and storage, making data center services painless in terms of configuration and managing virtual machines.</description>
+    </item>
+    
+    <item>
+      <title>IPV6 Benfits</title>
+      <link>mgalalm.github.io/posts/ipv6-benfits/</link>
+      <pubDate>Thu, 01 Oct 2020 21:41:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/ipv6-benfits/</guid>
+      <description>IPV6 protocol offers several benefits over IPV4, as its ability to handle packets more efficiently, boost performance, and security improvement.</description>
+    </item>
+    
+    <item>
+      <title>Bearish Harami and Bullish Harami</title>
+      <link>mgalalm.github.io/posts/candlesticks/</link>
+      <pubDate>Sun, 20 Sep 2020 19:37:18 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/candlesticks/</guid>
+      <description>Bearish Harami Consists of an unusually large green body followed by a small red body (contained within large green body).</description>
+    </item>
+    
+    <item>
+      <title>Disposition Effect</title>
+      <link>mgalalm.github.io/posts/disposition-effect/</link>
+      <pubDate>Tue, 08 Sep 2020 22:06:49 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/disposition-effect/</guid>
+      <description>Finance researches have documented a colossal preference for selling winners rather than losers bias that has been know as the disposition effect.</description>
+    </item>
+    
+    <item>
+      <title>Dataclasses Python</title>
+      <link>mgalalm.github.io/posts/dataclasses-python/</link>
+      <pubDate>Tue, 25 Aug 2020 21:31:13 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/dataclasses-python/</guid>
+      <description>&lt;p&gt;In python 3.6 and lower, the typical way to create a class in python with data members would be something like:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Interface in Python</title>
+      <link>mgalalm.github.io/posts/intreface-in-python/</link>
+      <pubDate>Sun, 16 Aug 2020 14:43:40 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/intreface-in-python/</guid>
+      <description>Unlike C sharp, Java, PHP and the list goes on, Python doesn&amp;rsquo;t have explicit language support for interface.</description>
+    </item>
+    
+    <item>
+      <title>Ionic 4 Slide Drawer</title>
+      <link>mgalalm.github.io/posts/ionic-slide-drawer/</link>
+      <pubDate>Wed, 29 Jul 2020 22:32:26 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/ionic-slide-drawer/</guid>
+      <description>&lt;p&gt;Creating a side menu is a simple affair in ionic, just follow these simple steps:&lt;/p&gt;
+&lt;p&gt;In your in your root component, &amp;ldquo;app.component.html&amp;rdquo; add the below code as sibling to ion-router-outlet&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Regression to the Mean</title>
+      <link>mgalalm.github.io/posts/regression-to-the-mean/</link>
+      <pubDate>Sun, 26 Jul 2020 12:35:10 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/regression-to-the-mean/</guid>
+      <description>&lt;p&gt;Regression toward (or to) the mean is the phenomenon that arises if a sample of a random variable is extreme, a future sample will be closer to the mean or average on further measurements&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python Basics of File Handling</title>
+      <link>mgalalm.github.io/posts/python-basics-of-file-handling/</link>
+      <pubDate>Tue, 14 Jul 2020 22:58:33 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/python-basics-of-file-handling/</guid>
+      <description>&lt;p&gt;Working with files is a simple affair in Python, as Python supports files handling natively, so no need to import any library for this purpose&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jumper Wires</title>
+      <link>mgalalm.github.io/posts/jumper-wires/</link>
+      <pubDate>Fri, 10 Jul 2020 20:14:45 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/jumper-wires/</guid>
+      <description>&lt;p&gt;Jumper wires are as simple as the name suggests; they are wires that end with pins, enabling them to connect two points without having a lot of soldering overhead. Jumper wires are conventionally used with breadboards and other prototyping tools to make changes to the circuit as a joy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to trigger event with WebdriverIO</title>
+      <link>mgalalm.github.io/posts/wedriverio-trigger-event/</link>
+      <pubDate>Thu, 02 Jul 2020 20:26:05 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/wedriverio-trigger-event/</guid>
+      <description>&lt;p&gt;Besides Shadow DOM support, WebdriverIO has the edge when it comes to writing javascript through the common execute function, as you write javascript natively not as a string between dummy double or single quotes in the case of java and other languages, so you don&amp;rsquo;t have to worry about syntax errors, along with leveraging autocompletion among other features that your IDE provides.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Share Part of Heavy Text Document</title>
+      <link>mgalalm.github.io/posts/how-to-share-part-of-heavy-text-document/</link>
+      <pubDate>Wed, 01 Jul 2020 00:53:46 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-share-part-of-heavy-text-document/</guid>
+      <description>&lt;p&gt;Chrome has just released the Link to Text Fragment Chrome extension, which unleashed the ability of creating a special link to the currently selected text on a page as easy as shooting fish in a barrel&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Turn your own handwriting as a font</title>
+      <link>mgalalm.github.io/posts/your-own-handwriting-as-a-font/</link>
+      <pubDate>Tue, 30 Jun 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/your-own-handwriting-as-a-font/</guid>
+      <description>&lt;p&gt;Web site &lt;a href=&#34;https://www.calligraphr.com/en/?rtom=myscriptfont&#34;&gt;Calligraphr&lt;/a&gt; creates a computer font of your own handwriting.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python for PHP developers part-1</title>
+      <link>mgalalm.github.io/posts/python-for-php-developers-part-1.md/</link>
+      <pubDate>Sun, 28 Jun 2020 00:56:02 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/python-for-php-developers-part-1.md/</guid>
+      <description>How does Python differ from PHP? Variables in Python vs PHP Unlike php there is no special characters to signifies a variable in python,</description>
+    </item>
+    
+    <item>
+      <title>Set Password on Behalf of Users Salesforce</title>
+      <link>mgalalm.github.io/posts/set-password-on-behalf-of-users-salesforce/</link>
+      <pubDate>Sun, 21 Jun 2020 23:01:47 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/set-password-on-behalf-of-users-salesforce/</guid>
+      <description>&lt;p&gt;Say yon want to recycle one or more users without going in relatively lengthy process of changing the email, or for any other legitimate reason.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dress Up Your Mac Charger</title>
+      <link>mgalalm.github.io/posts/dress-up-your-mac-charger/</link>
+      <pubDate>Sat, 20 Jun 2020 14:38:51 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/dress-up-your-mac-charger/</guid>
+      <description>&lt;p&gt;Once everyone at the office has the same mac machine, and some of them shares with you the extension cable, differentiate your mac charger with a swanky sticker from The Grommet.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open External Link in Blank Page with Hugo</title>
+      <link>mgalalm.github.io/posts/open-extrenal-links-in-blank-page-hugo/</link>
+      <pubDate>Fri, 19 Jun 2020 20:18:49 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/open-extrenal-links-in-blank-page-hugo/</guid>
+      <description>&lt;p&gt;Markdown is limited when it comes to fine grain your rendered html, a classic example is opening external link in a new tab or window, however with the combination of markdown and hugo you can get the best of both worlds.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Use WhatsApp as a Reminder</title>
+      <link>mgalalm.github.io/posts/whatsapp-im-reminder/</link>
+      <pubDate>Fri, 19 Jun 2020 19:34:49 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/whatsapp-im-reminder/</guid>
+      <description>&lt;p&gt;Send yourself a reminder of an upcoming event or a to-do using &lt;a href=&#34;https://www.any.do/&#34;&gt;Any.do&lt;/a&gt; app bot&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Show and Hide Slider Controls with Ionic</title>
+      <link>mgalalm.github.io/posts/show-hide-slider-controls-ionic/</link>
+      <pubDate>Wed, 17 Jun 2020 23:53:15 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/show-hide-slider-controls-ionic/</guid>
+      <description>&lt;p&gt;We have a slider composed of 3 slides, obviously we need to hide the previous button in the first slide and next button in the last slide&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Combine Multiple Internet Connection</title>
+      <link>mgalalm.github.io/posts/combine-multiple-internet-connection/</link>
+      <pubDate>Mon, 15 Jun 2020 23:54:33 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/combine-multiple-internet-connection/</guid>
+      <description>&lt;p&gt;Say you have multiple unlimited 3/4 G network, but you can use one at time, you need to get then most of both of them&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>On Switching From Mac to RaspberryPi</title>
+      <link>mgalalm.github.io/posts/on-switching-from-mac-to-raspberrypi/</link>
+      <pubDate>Sun, 14 Jun 2020 13:09:19 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/on-switching-from-mac-to-raspberrypi/</guid>
+      <description>&lt;p&gt;A photo-journalist based in West Yorkshire Peter Garner recently replaced his Mac mini with a Raspberry Pi, and he&amp;rsquo;s got some interesting insights into the process.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What 3mm in the back of you comb represents</title>
+      <link>mgalalm.github.io/posts/what-3mm-comb-represents/</link>
+      <pubDate>Thu, 11 Jun 2020 21:02:41 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/what-3mm-comb-represents/</guid>
+      <description>&lt;p&gt;So you&amp;rsquo;re in market for a hair clipper, or you already bought one, and eye in this number at the back of the attachment combs in bewilderment!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Code generation using drupal console</title>
+      <link>mgalalm.github.io/posts/code-generation-drupal/</link>
+      <pubDate>Wed, 10 Jun 2020 23:07:28 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/code-generation-drupal/</guid>
+      <description>&lt;p&gt;Like symfony console, drupal console offers a dozens of commands for generating modules and boilerplate code in the drupal ecosystem, among those commands are the following:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>cPanel Update Drupal7 Contrib Module</title>
+      <link>mgalalm.github.io/posts/cpanel-update-drupal7-module/</link>
+      <pubDate>Sat, 06 Jun 2020 21:12:07 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/cpanel-update-drupal7-module/</guid>
+      <description>&lt;p&gt;I can’t imagine using drupal contrib modules without keeping them fresh. This post will walk you through all the steps you need to do to get your contrib module updated through the powerful cPanel.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Update Drupal 7 Core via cPanel</title>
+      <link>mgalalm.github.io/posts/cpanel-update-drupal7-core/</link>
+      <pubDate>Sat, 06 Jun 2020 20:11:01 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/cpanel-update-drupal7-core/</guid>
+      <description>&lt;p&gt;The quickest road to update drupal through cPanel, consists of the following steps:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Make Homemade Burgers</title>
+      <link>mgalalm.github.io/posts/how-to-make-homemade-burgers/</link>
+      <pubDate>Mon, 01 Jun 2020 12:14:54 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-make-homemade-burgers/</guid>
+      <description>&lt;p&gt;Did you run out of burgers, however the nearest butcher are either miles away or closed, but you still want to serve your half-starved guests those were waiting all winter long for you BBQ,&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Working With Plugins Scripted Jenkins</title>
+      <link>mgalalm.github.io/posts/working-with-plugins-jenkins/</link>
+      <pubDate>Sun, 31 May 2020 16:56:29 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/working-with-plugins-jenkins/</guid>
+      <description>List all of the plugins you have in your instance We will need to use for loop to iterate over the list of Jenkins.</description>
+    </item>
+    
+    <item>
+      <title>How to Use Disposable BBQ</title>
+      <link>mgalalm.github.io/posts/how-to-use-disposable-bbq/</link>
+      <pubDate>Wed, 27 May 2020 19:33:11 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-use-disposable-bbq/</guid>
+      <description>&lt;p&gt;This post wants to give you a flavor of how to use disposable grill, but first you should know that there is no significant difference from any other traditional grills.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Close Browser With Selenium</title>
+      <link>mgalalm.github.io/posts/close-browser-with-selenium/</link>
+      <pubDate>Tue, 26 May 2020 01:23:35 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/close-browser-with-selenium/</guid>
+      <description>&lt;p&gt;There are a couple of different ways you can close the browser session in selenium:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NotSerializableException scripted Jenkins</title>
+      <link>mgalalm.github.io/posts/troubleshoot-scripted-jenkins/</link>
+      <pubDate>Sun, 24 May 2020 03:15:22 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/troubleshoot-scripted-jenkins/</guid>
+      <description>&lt;p&gt;If you receive NotSerializableException, in your scripted pipeline or share library, there are couple of reasons:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Calculate Your BMI</title>
+      <link>mgalalm.github.io/posts/how-to-calculate-your-bmi/</link>
+      <pubDate>Sat, 23 May 2020 16:17:05 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-calculate-your-bmi/</guid>
+      <description>&lt;h3 id=&#34;what-is-the-dividing-line-between-overweight-and-obese&#34;&gt;What is the dividing line between overweight and obese&lt;/h3&gt;
+&lt;p&gt;More than 25 BMI is considered overweight, while a person over&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Install iOS 13 Beta Profile</title>
+      <link>mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</link>
+      <pubDate>Wed, 20 May 2020 01:25:56 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-install-ios-13-beta-profile/</guid>
+      <description>&lt;p&gt;iOS releases a major free update annually in June, that being said it wont be available for public access up till September.&lt;/p&gt;
+&lt;p&gt;But what if you can&amp;rsquo;t wait to shake the new killer features out?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Outlook Multiple Time Zone</title>
+      <link>mgalalm.github.io/posts/outlook-multiple-time-zone/</link>
+      <pubDate>Mon, 18 May 2020 02:06:12 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/outlook-multiple-time-zone/</guid>
+      <description>&lt;p&gt;MS outlook supports multiple time zones for appointments. The following is a list of the steps of how to enable this on MacOs:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open Visual Studio Code From Terminal</title>
+      <link>mgalalm.github.io/posts/open-visual-studio-code-from-termianl/</link>
+      <pubDate>Sun, 17 May 2020 22:18:10 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/open-visual-studio-code-from-termianl/</guid>
+      <description>&lt;p&gt;There will be occasions when you need to open your favorite IDE visual studio from terminal, a common scenario could be to open a generated file while you are still in terminal, without switching the context.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Use Emoji Hugo</title>
+      <link>mgalalm.github.io/posts/use-emoji-hugo/</link>
+      <pubDate>Sun, 17 May 2020 01:05:34 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/use-emoji-hugo/</guid>
+      <description>By default, emoji is disabled in Hugo, to enable it, you need to set the enableEmoji to true in your config file.</description>
+    </item>
+    
+    <item>
+      <title>Continuation Passing Style (CPS)</title>
+      <link>mgalalm.github.io/posts/continuation-passing-style/</link>
+      <pubDate>Fri, 15 May 2020 23:25:49 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/continuation-passing-style/</guid>
+      <description>The scenario when you call a function but also pass another function that is to be executed when the input/output operation is finished, can be considered a case of continuation passing style (CPS)</description>
+    </item>
+    
+    <item>
+      <title>How to Submit Sitemap to Google</title>
+      <link>mgalalm.github.io/posts/how-to-submit-sitemap-to-google/</link>
+      <pubDate>Thu, 14 May 2020 22:29:24 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-submit-sitemap-to-google/</guid>
+      <description>&lt;p&gt;To follow along with the following steps, you should have submitted your website to Google already.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wrap html tag in vs studio</title>
+      <link>mgalalm.github.io/posts/wrap-html-tag-in-vs-studio/</link>
+      <pubDate>Wed, 13 May 2020 23:26:56 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/wrap-html-tag-in-vs-studio/</guid>
+      <description>&lt;p&gt;Rather than every time you need to wrap an element or a group of elements, you create the element, cut and paste the inner tags, you may make use of a &lt;code&gt;Wrap with Abbreviation&lt;/code&gt; a handy time-saver native feature of visual studio code&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What does the [:] signify in groovy?</title>
+      <link>mgalalm.github.io/posts/groovy-speical-sytnax/</link>
+      <pubDate>Wed, 13 May 2020 02:17:21 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/groovy-speical-sytnax/</guid>
+      <description>[:] creates an empty Map
+Java counterpart is
+Object foo = new java.util.LinkedHashMap(); In Groovy we can assign default values to parameters in a method, so using the empty map is handy in this case</description>
+    </item>
+    
+    <item>
+      <title>How to Cook Rice in a Pressure Cooker</title>
+      <link>mgalalm.github.io/posts/how-to-cook-rice-in-pressure-machine/</link>
+      <pubDate>Tue, 12 May 2020 22:22:22 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-cook-rice-in-pressure-machine/</guid>
+      <description>&lt;p&gt;My Pressure King Pro I bought it over 3 years ago, I use it day to day basis for cooking rice in a few minutes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add Google Analytics Hugo</title>
+      <link>mgalalm.github.io/posts/add-google-analytics-hugo/</link>
+      <pubDate>Tue, 12 May 2020 00:03:13 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/add-google-analytics-hugo/</guid>
+      <description>&lt;p&gt;Without beating around the bunch making google analytics aware of your newish hugo website, in the simplest form is a two-step process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add tag to hugo</title>
+      <link>mgalalm.github.io/posts/add-tag-to-hugo/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/add-tag-to-hugo/</guid>
+      <description>&lt;p&gt;To add a tag in a post add tags: [&amp;ldquo;tag1&amp;rdquo;, &amp;ldquo;tag2&amp;rdquo;, &amp;hellip;] to the front matter section, this section that holds your title.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add teaser to hugo content in listing</title>
+      <link>mgalalm.github.io/posts/add-teaser-to-hugo-content-listing/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/add-teaser-to-hugo-content-listing/</guid>
+      <description>&lt;h3 id=&#34;adjust-the-summary-manually&#34;&gt;Adjust the summary manually&lt;/h3&gt;
+&lt;p&gt;To manually split the content shown in the listing you can add&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chrome extensions with download links</title>
+      <link>mgalalm.github.io/posts/15-chrome-extensions-with-download-links/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/15-chrome-extensions-with-download-links/</guid>
+      <description>&lt;p&gt;One of the biggest strengths of the free Chrome web browser is a wide availability of small enhancement programs (called extensions) that can make the browser more efficient and fun to use. your title.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FormArray vs FormGroup</title>
+      <link>mgalalm.github.io/posts/formarrayvsformgroup/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/formarrayvsformgroup/</guid>
+      <description>&lt;p&gt;The important distinction between FormGroup and FormArray is that the data of the later serialized as an array&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Parameterize Jenkins pipeline</title>
+      <link>mgalalm.github.io/posts/paramaterize-jenkins-pipeline-example/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/paramaterize-jenkins-pipeline-example/</guid>
+      <description>&lt;p&gt;Say you need to have a parameter represents the branch so the developer can execute the build against a branch of their choice&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pull vs Fetch and use cases</title>
+      <link>mgalalm.github.io/posts/fetch-vs-pull-post/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/fetch-vs-pull-post/</guid>
+      <description>&lt;p&gt;The difference between git fetch and git pull is that:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;git fetch&lt;/strong&gt; tells your local git to retrieve the latest meta-data info from the original (yet doesn&amp;rsquo;t do any file transferring. It&amp;rsquo;s more like just checking to see if there are any changes available).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sticky spreadsheet header</title>
+      <link>mgalalm.github.io/posts/long-scrolling-spreadsheet/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/long-scrolling-spreadsheet/</guid>
+      <description>&lt;p&gt;In case you have a long scrolling spreadsheet, and keeping the headers matters you, use &amp;ldquo;Freeze panes&amp;rdquo; option to get your headers to stick around when you scroll down through rows of data.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

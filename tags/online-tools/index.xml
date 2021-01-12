@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>online-tools on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/online-tools/</link>
+    <description>Recent content in online-tools on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2020 00:53:46 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/online-tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Share Part of Heavy Text Document</title>
+      <link>mgalalm.github.io/posts/how-to-share-part-of-heavy-text-document/</link>
+      <pubDate>Wed, 01 Jul 2020 00:53:46 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-share-part-of-heavy-text-document/</guid>
+      <description>&lt;p&gt;Chrome has just released the Link to Text Fragment Chrome extension, which unleashed the ability of creating a special link to the currently selected text on a page as easy as shooting fish in a barrel&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Turn your own handwriting as a font</title>
+      <link>mgalalm.github.io/posts/your-own-handwriting-as-a-font/</link>
+      <pubDate>Tue, 30 Jun 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/your-own-handwriting-as-a-font/</guid>
+      <description>&lt;p&gt;Web site &lt;a href=&#34;https://www.calligraphr.com/en/?rtom=myscriptfont&#34;&gt;Calligraphr&lt;/a&gt; creates a computer font of your own handwriting.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

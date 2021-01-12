@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jun 2020 20:18:49 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open External Link in Blank Page with Hugo</title>
+      <link>mgalalm.github.io/posts/open-extrenal-links-in-blank-page-hugo/</link>
+      <pubDate>Fri, 19 Jun 2020 20:18:49 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/open-extrenal-links-in-blank-page-hugo/</guid>
+      <description>&lt;p&gt;Markdown is limited when it comes to fine grain your rendered html, a classic example is opening external link in a new tab or window, however with the combination of markdown and hugo you can get the best of both worlds.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Use Emoji Hugo</title>
+      <link>mgalalm.github.io/posts/use-emoji-hugo/</link>
+      <pubDate>Sun, 17 May 2020 01:05:34 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/use-emoji-hugo/</guid>
+      <description>By default, emoji is disabled in Hugo, to enable it, you need to set the enableEmoji to true in your config file.</description>
+    </item>
+    
+    <item>
+      <title>Add Google Analytics Hugo</title>
+      <link>mgalalm.github.io/posts/add-google-analytics-hugo/</link>
+      <pubDate>Tue, 12 May 2020 00:03:13 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/add-google-analytics-hugo/</guid>
+      <description>&lt;p&gt;Without beating around the bunch making google analytics aware of your newish hugo website, in the simplest form is a two-step process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add tag to hugo</title>
+      <link>mgalalm.github.io/posts/add-tag-to-hugo/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/add-tag-to-hugo/</guid>
+      <description>&lt;p&gt;To add a tag in a post add tags: [&amp;ldquo;tag1&amp;rdquo;, &amp;ldquo;tag2&amp;rdquo;, &amp;hellip;] to the front matter section, this section that holds your title.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add teaser to hugo content in listing</title>
+      <link>mgalalm.github.io/posts/add-teaser-to-hugo-content-listing/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/add-teaser-to-hugo-content-listing/</guid>
+      <description>&lt;h3 id=&#34;adjust-the-summary-manually&#34;&gt;Adjust the summary manually&lt;/h3&gt;
+&lt;p&gt;To manually split the content shown in the listing you can add&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

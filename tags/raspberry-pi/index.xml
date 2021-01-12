@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry Pi on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/raspberry-pi/</link>
+    <description>Recent content in Raspberry Pi on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jul 2020 20:14:45 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jumper Wires</title>
+      <link>mgalalm.github.io/posts/jumper-wires/</link>
+      <pubDate>Fri, 10 Jul 2020 20:14:45 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/jumper-wires/</guid>
+      <description>&lt;p&gt;Jumper wires are as simple as the name suggests; they are wires that end with pins, enabling them to connect two points without having a lot of soldering overhead. Jumper wires are conventionally used with breadboards and other prototyping tools to make changes to the circuit as a joy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>On Switching From Mac to RaspberryPi</title>
+      <link>mgalalm.github.io/posts/on-switching-from-mac-to-raspberrypi/</link>
+      <pubDate>Sun, 14 Jun 2020 13:09:19 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/on-switching-from-mac-to-raspberrypi/</guid>
+      <description>&lt;p&gt;A photo-journalist based in West Yorkshire Peter Garner recently replaced his Mac mini with a Raspberry Pi, and he&amp;rsquo;s got some interesting insights into the process.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

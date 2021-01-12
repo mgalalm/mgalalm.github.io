@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>health on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/health/</link>
+    <description>Recent content in health on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 May 2020 16:17:05 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Calculate Your BMI</title>
+      <link>mgalalm.github.io/posts/how-to-calculate-your-bmi/</link>
+      <pubDate>Sat, 23 May 2020 16:17:05 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/how-to-calculate-your-bmi/</guid>
+      <description>&lt;h3 id=&#34;what-is-the-dividing-line-between-overweight-and-obese&#34;&gt;What is the dividing line between overweight and obese&lt;/h3&gt;
+&lt;p&gt;More than 25 BMI is considered overweight, while a person over&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

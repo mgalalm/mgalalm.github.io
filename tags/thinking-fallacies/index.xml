@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thinking Fallacies on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/thinking-fallacies/</link>
+    <description>Recent content in Thinking Fallacies on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Sep 2020 22:06:49 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/thinking-fallacies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disposition Effect</title>
+      <link>mgalalm.github.io/posts/disposition-effect/</link>
+      <pubDate>Tue, 08 Sep 2020 22:06:49 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/disposition-effect/</guid>
+      <description>Finance researches have documented a colossal preference for selling winners rather than losers bias that has been know as the disposition effect.</description>
+    </item>
+    
+  </channel>
+</rss>

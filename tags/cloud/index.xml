@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloud on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/cloud/</link>
+    <description>Recent content in cloud on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2020 14:08:31 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Centralized Storage</title>
+      <link>mgalalm.github.io/posts/centralized-storage/</link>
+      <pubDate>Sun, 18 Oct 2020 14:08:31 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/centralized-storage/</guid>
+      <description>Before we get into centralized storage, we should touch on the classic storage DAS.
+DAS (Direct Attached Storage), is the traditional storage type; as the name itself implies it refers to storage which is dedicated to the use of the computer of server, like this disk integrated in your laptop or PC.</description>
+    </item>
+    
+  </channel>
+</rss>
