@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/devops/</link>
+    <description>Recent content in devops on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2020 17:25:18 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Virtual Machine Files</title>
+      <link>mgalalm.github.io/posts/virtual-machine-files/</link>
+      <pubDate>Sun, 18 Oct 2020 17:25:18 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/virtual-machine-files/</guid>
+      <description>Virtual machine itself consists of multiple files that reside on the data store itself.
+Global virtual machine files.</description>
+    </item>
+    
+    <item>
+      <title>Limit CPU Features to Virtual Machine</title>
+      <link>mgalalm.github.io/posts/limit-cpu-features-virtual-machines/</link>
+      <pubDate>Sun, 18 Oct 2020 13:47:51 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/limit-cpu-features-virtual-machines/</guid>
+      <description>You can mask some of the CPU features to not be exposed to the virtual machine; a common example is &amp;ldquo;AMD No eXecute (NX)&amp;rdquo; and &amp;ldquo;Intel eXecute Disable (XD)&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>What Is Esxi Host</title>
+      <link>mgalalm.github.io/posts/what-is-esxi-host/</link>
+      <pubDate>Sat, 17 Oct 2020 23:31:12 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/what-is-esxi-host/</guid>
+      <description>ESXi host is the actual physical server that the virtual machines will run on. ESXi is the operating system that we install on this physical server.</description>
+    </item>
+    
+    <item>
+      <title>Software Defined Data Center SDDC</title>
+      <link>mgalalm.github.io/posts/software-defined-data-center-sddc/</link>
+      <pubDate>Fri, 16 Oct 2020 20:49:46 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/software-defined-data-center-sddc/</guid>
+      <description>What is software-defined data center? The software-defined data center approach extends industry-leading virtualization beyond computing, network and storage, making data center services painless in terms of configuration and managing virtual machines.</description>
+    </item>
+    
+    <item>
+      <title>Working With Plugins Scripted Jenkins</title>
+      <link>mgalalm.github.io/posts/working-with-plugins-jenkins/</link>
+      <pubDate>Sun, 31 May 2020 16:56:29 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/working-with-plugins-jenkins/</guid>
+      <description>List all of the plugins you have in your instance We will need to use for loop to iterate over the list of Jenkins.</description>
+    </item>
+    
+    <item>
+      <title>NotSerializableException scripted Jenkins</title>
+      <link>mgalalm.github.io/posts/troubleshoot-scripted-jenkins/</link>
+      <pubDate>Sun, 24 May 2020 03:15:22 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/troubleshoot-scripted-jenkins/</guid>
+      <description>&lt;p&gt;If you receive NotSerializableException, in your scripted pipeline or share library, there are couple of reasons:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Continuation Passing Style (CPS)</title>
+      <link>mgalalm.github.io/posts/continuation-passing-style/</link>
+      <pubDate>Fri, 15 May 2020 23:25:49 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/continuation-passing-style/</guid>
+      <description>The scenario when you call a function but also pass another function that is to be executed when the input/output operation is finished, can be considered a case of continuation passing style (CPS)</description>
+    </item>
+    
+    <item>
+      <title>Parameterize Jenkins pipeline</title>
+      <link>mgalalm.github.io/posts/paramaterize-jenkins-pipeline-example/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/paramaterize-jenkins-pipeline-example/</guid>
+      <description>&lt;p&gt;Say you need to have a parameter represents the branch so the developer can execute the build against a branch of their choice&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

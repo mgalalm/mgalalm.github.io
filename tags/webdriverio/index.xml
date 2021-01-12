@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WebdriverIO on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/webdriverio/</link>
+    <description>Recent content in WebdriverIO on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 20:26:05 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/webdriverio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to trigger event with WebdriverIO</title>
+      <link>mgalalm.github.io/posts/wedriverio-trigger-event/</link>
+      <pubDate>Thu, 02 Jul 2020 20:26:05 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/wedriverio-trigger-event/</guid>
+      <description>&lt;p&gt;Besides Shadow DOM support, WebdriverIO has the edge when it comes to writing javascript through the common execute function, as you write javascript natively not as a string between dummy double or single quotes in the case of java and other languages, so you don&amp;rsquo;t have to worry about syntax errors, along with leveraging autocompletion among other features that your IDE provides.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

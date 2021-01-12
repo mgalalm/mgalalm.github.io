@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>salesforce on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/salesforce/</link>
+    <description>Recent content in salesforce on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jun 2020 23:01:47 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/salesforce/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set Password on Behalf of Users Salesforce</title>
+      <link>mgalalm.github.io/posts/set-password-on-behalf-of-users-salesforce/</link>
+      <pubDate>Sun, 21 Jun 2020 23:01:47 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/set-password-on-behalf-of-users-salesforce/</guid>
+      <description>&lt;p&gt;Say yon want to recycle one or more users without going in relatively lengthy process of changing the email, or for any other legitimate reason.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Candlesticks on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/candlesticks/</link>
+    <description>Recent content in Candlesticks on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Sep 2020 19:37:18 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/candlesticks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bearish Harami and Bullish Harami</title>
+      <link>mgalalm.github.io/posts/candlesticks/</link>
+      <pubDate>Sun, 20 Sep 2020 19:37:18 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/candlesticks/</guid>
+      <description>Bearish Harami Consists of an unusually large green body followed by a small red body (contained within large green body).</description>
+    </item>
+    
+  </channel>
+</rss>

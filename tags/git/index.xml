@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Yak Shaving</title>
+    <link>mgalalm.github.io/tags/git/</link>
+    <description>Recent content in Git on Yak Shaving</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Apr 2020 21:20:52 +0100</lastBuildDate>
+    
+	<atom:link href="mgalalm.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pull vs Fetch and use cases</title>
+      <link>mgalalm.github.io/posts/fetch-vs-pull-post/</link>
+      <pubDate>Wed, 15 Apr 2020 21:20:52 +0100</pubDate>
+      
+      <guid>mgalalm.github.io/posts/fetch-vs-pull-post/</guid>
+      <description>&lt;p&gt;The difference between git fetch and git pull is that:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;git fetch&lt;/strong&gt; tells your local git to retrieve the latest meta-data info from the original (yet doesn&amp;rsquo;t do any file transferring. It&amp;rsquo;s more like just checking to see if there are any changes available).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
