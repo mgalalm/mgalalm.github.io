@@ -1,0 +1,607 @@
+[
+    {
+        "uri": "/posts/10-chrome-handy-time-savers",
+        "content": "---\ntitle: \"10 Chrome Handy Time Savers\"\ndate: 2020-05-27T21:53:43+01:00\ndraft: true\ntags: [\"\"]\n---\n\nRather than closing the tabs one by one, right click on the tab and choose close all the tabs on thee right.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/15-chrome-extensions-with-download-links",
+        "content": "---\ntitle: \"Chrome extensions with download links\"\ndate: 2020-04-15T21:20:52+01:00\ndraft: false\ntags: [\"browser\"]\n---\n\nOne of the biggest strengths of the free Chrome web browser is a wide availability of small enhancement programs (called extensions) that can make the browser more efficient and fun to use. your title.!--more--\n\nAdblock download\n\nFilters ads from web pages.\n\n JSONView download\n\nValidate and view JSON documents\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/access-attributes-getter-setter-python",
+        "content": "---\ntitle: 'Access Attributes Getter Setter Python'\ndate: 2020-08-23T11:58:06+01:00\ndraft: true\ntags: ['python']\nauthor: 'M. Awad'\n---\n\nclass Product():\n    def init(self, name, price):\n        self.name = name\n        self. price = price\n        self._discount = 0.1\n\n    def getattribute(self, name):\n        if name == \"price\":\n            p = super().getattribute(\"price\")\n            d = super().getattribute(\"_discount\")\n            return p - (p * d)\n        return super().getattribute(name)\n\n    def setdiscount(self, amount):\n        self._discount = amount\n\nNotice here we use super().getattribute(\"price\") for accessing te price attribute inside the getattribute rather than self.price as the later will end up calling getattribute again.\n\nThe last line is return super().getattribute(name) is to return any other attribute apart from price\n\nSo what happened when the attribute doesn't exist\n\ngetattr is another version of getattribute, it's get called when the attribute doesn't exist\n\nit can be used to generated attribute on the fly\n\n    def getattr(self, name):\n        if name == \"computed\":\n            return self.price\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/access-raspberry-pi-remotely",
+        "content": "---\ntitle: \"Access and Control Raspberry Pi Remotely\"\ndate: 2020-07-06T22:07:21+01:00\ndraft: true\ntags: [\"Raspberry Pi\"]\nauthor: \"M. Awad\"\n---\n\nRealvnc\n\nCreate an account\nVerify your email.\nInstall VNC server if it's not-installed highly likely you have it already you have Raspbian Jessie or later, VNC® Server is pre-installed, so only download if your Raspberry Pi has a different Linux distribution.\nOn your Raspberry Pi, sign in to VNC ServerSign to the cloud with the email and password You will receive an email for confirmation of any new sign.\nOn the client VNC Viewer\nClicking the link authorize the new client\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/add-google-analytics-hugo",
+        "content": "---\ntitle: \"Add Google Analytics Hugo\"\ndate: 2020-05-12T00:03:13+01:00\ndraft: false\ntags: [\"hugo\"]\n---\n\nWithout beating around the bunch making google analytics aware of your newish hugo website, in the simplest form is a two-step process\n\n!--more--\n\n1- In config.toml file add\n\ngoogleAnalytics = \"Your given tracking id\"\n\n2- In your theme layout that houses the head tag (in case of ananke it's in themes/ananke/layouts/\\_default/baseof.html) add the Google Analytics internal template\n\n{ template \"internal/googleanalytics.html\" . }}\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/add-tag-to-hugo",
+        "content": "---\ntitle: \"Add tag to hugo\"\ndate: 2020-04-15T21:20:52+01:00\ndraft: false\ntags: [\"hugo\"]\n---\n\nTo add a tag in a post add tags: [\"tag1\", \"tag2\", ...] to the front matter section, this section that holds your title.!--more--\n\nIn case you click on the tags and you get 404, you may need just to restart your server\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/add-teaser-to-hugo-content-listing",
+        "content": "---\ntitle: \"Add teaser to hugo content in listing\"\ndate: 2020-04-15T21:20:52+01:00\ndraft: false\ntags: [\"hugo\"]\n---\n\nAdjust the summary manually\n\nTo manually split the content shown in the listing you can add !--more--&lt;!--more--&gt; summary divider where you want to split the article.\n\n Adjust the summary automatically\n\nSo what happen if you don't provide that said divider? without providing anything , hugo is already handling this case, enforcing an automatic summary of 70 words.\n\nMore often than not you want to adjust the length of the automatic summary, to achieve this in your configuration set the summaryLength to a value out of your choice.\n\nFor example the below will set the default summary length to 15 words instead of 70.\n\nsummaryLength=15\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/adding-security-groups-odoo",
+        "content": "---\ntitle: 'Adding Security Groups Odoo'\ndate: 2020-09-06T21:27:04+01:00\ndraft: true\ntags: ['Odoo']\nauthor: 'M. Awad'\n---\n\nOdoo apps typically provide two groups, a user level, for use by regular users, and a\nmanager level, with additional access to app configuration, or you may In the case of Odoo sale Management, the administrator can see all the sales but a salesman can see only his sales.\n\nThis security groups also used to control the access to fields and menues\n\nAccess-security related files are usually kept in a /security module subdirector\n\nInside this directory create a file modulename_security.xml\n\nTo organize the groups we need to create a category in the category model in odoo database\n\n?xml version=\"1.0\" ?\nodoo\n    record id=\"module{modulename}category\" model=\"ir.module.category\"\n        field name=\"name\"{modulename}/field\n    /record\n/odoo\n\nNext we need to create a security group caters for regular user, in modulename_security.xml immediately before /odoo\n\n!-- Library User Group --\nrecord id=\"{moduelname}groupuser\" model=\"res.groups\"\nfield name=\"name\"User/field\nfield name=\"categoryid\" ref=\"module{modulename}_category\"/\nfield name=\"impliedids\" eval=\"[(4, ref('base.groupuser'))]\"/\n/record\n\nname is the group title.\ncategory_id is the related app. It is a relational field, so the ref attribute is used with an XML ID linking it to the category we've already created.\nimplied_ids is a one-to-many relational field, and contains a list of groups that\n  will also apply to users belonging to this group, to inherit its privileges.\n\n  record id=\"librarygroupmanager\" model=\"res.groups\"\n        field name=\"name\"Manager/field\n        field name=\"categoryid\" ref=\"modulelibrary_category\"/\n        field name=\"impliedids\" eval=\"[(4, ref('librarygroup_user'))]\"/\n        <field name=\"users\" eval=\"[(4, ref('base.user_root')),\n(4, ref('base.user_admin'))]\"/\n    /record\n\nThe only difference field users field, it's used set so that the administrator and the internal root users are automatically app managers.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/advanatges-of-centralized-storage-",
+        "content": "---\ntitle: \"Advantages of Centralized Storage \"\ndate: 2020-10-17T17:25:30+01:00\ndraft: false\ntags: [\"hardware\", \"storage\"]\nauthor: \"M. Awad\"\n---\nDisk Utilization\n Thin provisioning\n\nThin provisioning provides a means by which makes the storage appear to the servers that they have more storage than you have paid. \n\nUsing centralized storage allows for thin provisioning; when the storage is getting low,  adding more physical storage is a cinch. The client is oblivious to any change, which shifts your focus from the 'just in case' to 'just in time' model of purchasing storage space.\n\nDeduplication and Compression \nDetect and eliminates identical blocks; those blocks are then replaced with reference to a single copy of the block on disk, so it saves you a lot of space.\n\nOn the other hand, compression detects and eliminates redundant data and white space in files.\n\n Resiliency \n\nIf any component failed there is another component to add as a backup. \n\nCentralized management \n\nIt's much easier to manage all your storage from a centralized location rather than separately across all your servers.\n\n Storage Tiering\n\nThe system can have a wide range of storage media for different purposes, SSD (caters to hot data), SATA (caters to cold data) ..so on \n\nDisaster recovery and load balancing\nReplicate the data to a disaster recover site.\nAllow for load balancing. \n\n Virtualization support \n \nOne of the virtualization hallmarks is moving virtual servers between physical servers on the fly while they are still running. Using centralized storage unlocks the possibility of virtual machine migration.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/ambiguity-effect",
+        "content": "---\ntitle: \"Ambiguity Effect\"\ndate: 2021-01-13T00:09:17Z\ndraft: false\ntags: [\"Thinking Fallacies\"]\nauthor: \"M. Awad\"\n---\nAmbiguity effect is the tendency to avoid options for which missing information makes the probability of the outcome seem \"unknown.\" \n\nAn example of the ambiguity effect is that most people would choose a regular paycheck over a business venture's unknown payoff.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/archive-files-python",
+        "content": "---\ntitle: \"Archive Files Python\"\ndate: 2020-07-18T20:09:30+01:00\ndraft: true\ntags: [\"python\"]\nauthor: \"M. Awad\"\n---\n\nTo archive the entire directory\n\nimport path\nfrom shutil import make_archive\n src = path.realpath(\"textfile.txt\")\n shutil.makearchive(\"archive\", \"zip\", rootdir)\n\n Selectively archive files\n\nfrom zipfile import ZipFile\nwith ZipFile(\"testzip.zip\", \"w\") as newzip:\n    newzip.write(\"filename1\")\n    newzip.write(\"filename2\")\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/attorney-vs-lawyer-vs-solicitor",
+        "content": "---\ntitle: \"Attorney vs Lawyer vs Solicitor\"\ndate: 2020-05-13T00:56:39+01:00\ndraft: true\ntags: [\"Legal\"]\n---\n\nThere is a slight difference between Attorney and Lawyer.:smile:\n\nA lawyer is someone who is learned and trained in law. Chances are that they never actually practice law yet.\n\nAttorney-at-law so-called attorney is defined as a practitioner in a court of law who is legally qualified to prosecute and defend actions in such court on behalf of their clients.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/attributes-vs-property-in-python",
+        "content": "---\ntitle: 'Attributes vs Property in Python'\ndate: 2020-08-11T21:22:18+01:00\ndraft: true\ntags: ['python']\nauthor: 'M. Awad'\n---\n\nProperty\n\nWith mutable objects like lists it will act like static\n\nclass Book:\n    BOOK_TYPES = {\"HARDCOVER\", \"PAPERBACK\", \"EBOOK\"}\n\nb1 = Book()\nb2 = Book()\nb1.BOOK_TYPES.add(\"CUSTOM\")\nprint(b1.BOOK_TYPES)\nprint(b2.BOOK_TYPES)\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/candlesticks",
+        "content": "---\ntitle: 'Bearish Harami and Bullish Harami'\ndate: 2020-09-20T19:37:18+01:00\ndraft: false\ntags: ['Stock Market', 'Candlesticks']\nauthor: 'M. Awad'\n---\n\nBearish Harami\n\nConsists of an unusually large green body followed by a small red body (contained within large green body). It is considered as a bearish pattern when preceded by an uptrend\n\n Bullish Harami\n\nConsists of an unusually large red body followed by a small green body (contained within large red body). It is considered as a bullish pattern when preceded by a downtrend. Engulfing Bullish Consists of a small red body that is contained within the followed large green candlestick. When it appears at bottom it is interpreted as a major reversal signal.\n\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/centralized-storage",
+        "content": "---\ntitle: \"Centralized Storage\"\ndate: 2020-10-18T14:08:31+01:00\ndraft: false\ntags: [\"storage\", \"hardware\", \"cloud\"]\nauthor: \"M. Awad\"\n---\nBefore we get into centralized storage, we should touch on the classic storage DAS.\n\nDAS (Direct Attached Storage), is the traditional storage type; as the name itself implies it refers to storage which is dedicated to the use of the computer of server, like this disk integrated in your laptop or PC.   \n\nCentralized storage \nBoth SAN and NAS provide shared, centralized storage that many devices can access over a network.\n\nThose type of storage system has its own controller, a.k.a the head; the controller consists of a motherboard, CPU, network. In addition to the controller, the storage system inevitably has disk(s), whether internal or external.\n\nLike your server, the storage system needs an OS as well; the OS lives on top of the controller; what the OS does is lives on the controller and manages communication out to clients and disk subsystem as well, and it controls running all the features like deduplication, compression, and so on.\n\n So why to use NAS or SAN rather than DAS.\n\nThe utilization you always getting is around 30% of disk space of the dedicated hard disks due to overprovisioning and having buffers; on the other hand, centralized storage provides a centralized pool of shared storage, which brings the utilization closer to 80%.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/certainty-effect-probability-effect",
+        "content": "---\ntitle: 'Certainty Effect and Possibility Effect'\ndate: 2020-08-22T12:30:23+01:00\ndraft: true\ntags: ['Thinking Fallacies']\nauthor: 'M. Awad'\n---\n\nPossibility effect\n\nThe possibility effect represents the overestimation of very small probabilities. Small probabilities are either ignored or highly overestimated. Small probabilities that are ignored are in essence rare events that you don't even consider or think of. One example is being struck by lightning\n\n Certainty Effect\n\nThe certainty effect is the psychological effect resulting from the reduction of probability from certainty to probable\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/change-where-screenshot-saved-mac",
+        "content": "---\ntitle: \"Change Where Screenshot Saved Mac\"\ndate: 2021-01-12T23:10:15Z\ndraft: true\ntags: [\"\"]\nauthor: \"M. Awad\"\n---\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/close-browser-with-selenium",
+        "content": "---\ntitle: \"Close Browser With Selenium\"\ndate: 2020-05-26T01:23:35+01:00\ndraft: false\ntags: [\"selenium\", \"automation\"]\n---\n\nThere are a couple of different ways you can close the browser session in selenium:!--more--\n\nTo close the browser window in focus, simply you can call close() on your driver instance .i.e driver.close()\nHowever, sometimes your needs for closing all browser windows, what quit() can handle, .i.e driver.quit()\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/code-generation-drupal",
+        "content": "---\ntitle: \"Code generation using drupal console\"\ndate: 2020-06-10T23:07:28+01:00\ndraft: false\ntags: [\"drupal\", \"drupal console\", \"drupal 8\"]\n---\n\nLike symfony console, drupal console offers a dozens of commands for generating modules and boilerplate code in the drupal ecosystem, among those commands are the following: !--more--\n\nGenerate a module\n\ndrupal gm --module helloworld --dependencies jsonapi\n\nNote: if you don’t have the custom directory yet, this command will take care of creating it for you.\n\n Generate services\n\ndrupal generate:service --module=helloworld --path-service=\"/modules/custom/helloworld/src/\" --name=\"helloworld.painter\" --class=\"Painter\"\n\nGenerate a controller\n\ndrupal generate:controller --module=helloworld --class=\"DefaultController\"\n\nIf your service depends on another services when you prompt with Enter your service []: enter the name of the dependencies services and press enter for example helloworld.fancy_logger, that will do a couple of things:\n\nAdd the dependency in the argument [] section of the service declaration in the service.yaml.\nAnd injects the said service class/ interface in the constructor.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/combine-multiple-internet-connection",
+        "content": "---\ntitle: \"Combine Multiple Internet Connection\"\ndate: 2020-06-15T23:54:33+01:00\ndraft: false\ntags: [\"mac\", \"network\"]\n---\n\nSay you have multiple unlimited 3/4 G network, but you can use one at time, you need to get then most of both of them !--more--\n\nWhat you need\n\nTo follow along with this tutorial you'll need to have Node.JS = 0.10.0 installed on your system.\n\nMultiple network interface , in my case I bought a TP-Link adapter for this purpose.\n\nistat menus app (optional)\n\nLet's install dispatch-proxy as a global package by executing the following commands in your local command shell or terminal\n\nnpm install -g dispatch-proxy --debug\n\nThe will start the dispatch service\n\ndispatch start\n\nTake a note of the proxy server should be something like localhost:1080\n\nNext step is to update your wifi interfaces with the new socks proxy\n\nTo make sure it's working as expected you may download is that menu app, it has 7-days free trial,\n\nMake sure combine bandwidth for all interfaces checkbox is cleared\n\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/conditional-if",
+        "content": "---\ntitle: \"Conditional If\"\ndate: 2020-06-06T14:19:59+01:00\ndraft: true\ntags: [\"language\", \"grammar\"]\n---\n\n3rd conditional\n\nWe use the third conditional to talk about something in the past that did not happen. This is the way we imagine how things could have been different in the past.\n\nif + past perfect, would + have + past participle\n\nFor example\nIf he was the right side of the pale, he would have become a lot richer and had a more rewarding career\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/configuration-hugo",
+        "content": "---\ntitle: \"Configuration Hugo\"\ndate: 2020-05-13T23:04:10+01:00\ndraft: true\ntags: [\"hugo\"]\n---\n\nProjects with minimal settings and no need for environment awareness can use a single config.toml file at its root.\n\nConfig directory is not created by default.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/constructor-in-python",
+        "content": "---\ntitle: 'Constructor in Python'\ndate: 2020-08-11T19:48:05+01:00\ndraft: true\ntags: ['python']\nauthor: 'M. Awad'\n---\n\ndef init(self):\n    # body of the constructor\n\nThe default constructor is simple constructor which doesn’t accept any arguments.It’s definition has only one argument which is a reference to the instance being constructed.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/continuation-passing-style",
+        "content": "---\ntitle: \"Continuation Passing Style (CPS)\"\ndate: 2020-05-15T23:25:49+01:00\ndraft: false\ntags: [\"jenkins\", \"groovy\", \"devops\"]\n---\n\nThe scenario when you call a function but also pass another function that is to be executed when the input/output operation is finished, can be considered a case of continuation passing style (CPS)\n\nDirect style:\n\nfunction direct(x) {\n  return x * x;\n}\n\nCPS style;\n\nfunction cps(x, done) {\n  done(x * x); //call done instead of returning.\n}\n\nCall site for CPS\n\ncps(\n  2,\n  /then/ function (res) {\n    console.log(res);\n  }\n);\n\nwhich equivalent to direct style\n\nres = direct(2);\nconsole.log(res);\n\nJenkins transform the code to\n\nThe @NonCPS annotation is useful when you have methods which use objects which aren't serializable. Normally, all objects that you create in your pipeline script must be serializable (the reason for this is that Jenkins must be able to serialize the state of the script so that it can be paused and stored on disk).\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/correlation-coefficient",
+        "content": "---\ntitle: 'Correlation Coefficient'\ndate: 2020-07-26T12:45:44+01:00\ndraft: true\ntags: ['Statistics']\nauthor: 'M. Awad'\n---\n\nCorrelation coefficients are used in statistics to measure how strong a relationship is between two variables\n\nCorrelation coefficient formulas are used to find how strong a relationship is between data. The formulas return a value between -1 and 1, where:\n\n1 indicates a perfect positive relationship.\n-1 indicates a perfect negative relationship.\nA result of zero indicates no relationship at all.\n\nA correlation coefficient of 1 means that for every positive increase in one variable, there is a positive increase of a fixed proportion in the other. For example, shoe sizes go up in (almost) perfect correlation with foot length.\nA correlation coefficient of -1 means that for every positive increase in one variable, there is a negative decrease of a fixed proportion in the other. For example, the amount of gas in a tank decreases in (almost) perfect correlation with speed.\nZero means that for every increase, there isn’t a positive or negative increase. The two just aren’t related.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/cpanel-echo-system-and-overlooked-features",
+        "content": "---\ntitle: \"Cpanel Echo System and Overlooked Features\"\ndate: 2020-06-06T19:44:31+01:00\ndraft: true\ntags: [\"Cpanel\"]\n---\n\nWhat is the difference between www and public_html?\n\nBoth are www is an alias of publichtml holds the same files, technically www is just an alias set up to point to publichtml folder.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/cpanel-update-drupal7-core",
+        "content": "---\ntitle: \"Update Drupal 7 Core via cPanel\"\ndate: 2020-06-06T20:11:01+01:00\ndraft: false\ntags: [\"drupal 7\", \"cPanel\", \"drupal\"]\n---\n\nThe quickest road to update drupal through cPanel, consists of the following steps: !--more--\n\nTake a backup of your database.\nBackup publichtml to publichtml_backup.\nDownload the latest version of drupal7.\nUpload your the archive file using cPanel file manager\nPut drupal in maintenance mode.\nWipe out the content of public_html directory.\nExtract drupal core to public_html\nReplace the new sites folder with the sites folder from publichtmlbackup.\nRun Update.php by visiting example.com/update.php\n10. Switch off maintenance mode.\n11. Test the site functionalities, while keeping your eye on reports - Recent log messages.\n12. Remove the publichtmlbackup folder when it all works nicely.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/cpanel-update-drupal7-module",
+        "content": "---\ntitle: \"cPanel Update Drupal7 Contrib Module\"\ndate: 2020-06-06T21:12:07+01:00\ndraft: false\ntags: [\"drupal 7\", \"cPanel\", \"drupal\"]\n---\n\nI can’t imagine using drupal contrib modules without keeping them fresh. This post will walk you through all the steps you need to do to get your contrib module updated through the powerful cPanel.!--more--\n\nTake a backup of your database and the module files.\nDownload the recommended version of the module.\nUpload the archive using cPanel file manager in your dedicated contrib modules, usually it's in sites/all/modules/contrib.\nRemove the module folder.\nExtract the archive.\nRun Update.php by visiting example.com/update.php\nSwitch off maintenance mode.\nTest the module functionalities, while keeping your eye on reports - Recent log messages.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/CPU-virtualization",
+        "content": "---\ntitle: \"CPU Virtualization\"\ndate: 2021-01-13T00:20:43Z\ndraft: true\ntags: [\"virtualization\"]\nauthor: \"M. Awad\"\n---\nIn a physical environment, the operating system always assumes the ownership of all physical resources.  In a virtual environment, many, if not most, operating systems are oblivious to the fact that it doesn't actually own those resources; however, sometimes, the operating system is virtualization-aware.\n\nCPU virtualization involves a single CPU acting as if it were multiple separate CPUs.  The most common reason for doing this is to run multiple operating systems on one host, so every operating system has its CPU.\n\nThe underlying physical resources are used whenever possible. The virtualization layer runs instructions only as needed to make virtual machines operate as if they were running directly on a physical device.\n\nWhen many virtual machines are running on an ESXi host, those virtual machines might compete for CPU resources. When CPU contention occurs, the ESXi host time-slices the physical processors across all virtual machines, so each virtual machine runs as if it has its specified number of virtual processors.\n\nThe first virtual machine needs to execute a set of commands on the virtual hardware, and that request is directed to the hypervisor.\nThe hypervisor schedules an execution session for that virtual machine's request.\nThe physical CPU executes the instructions on the associated data and passes the results back to the hypervisor, which returns them to the first virtual machine.\nAs the physical CPU frees up, the hypervisor schedules the next set of instructions from the second virtual machine to be performed\n\nAlso, virtual CPUs are not mapped to physical CPUs. A hypervisor will schedule work on behalf of a virtual machine on any available physical CPU, so the work from a particular virtual machine might actually be run on any and all of the host processors over a period of time.\n\nWhat happens when you add vCPUs to virtual machines? If you have a virtual machine with two vCPUs, the hypervisor will need to schedule work on two physical CPUs. That means two physical CPUs would need to be available at the same time for the work to be performed. Don't forget, virtualizing a CPU is really just scheduling slices of time on the physical CPU. In the case of a VM with more than one vCPU, you need more than one physical CPU to be available to do the work.\n\nLimit CPU features exposed to virtual machines. \nYou can mask some of the CPU features to not be exposed to the virtual machine; a common example is \"AMD No eXecute (NX)\" and  \"Intel eXecute Disable (XD)\". It is considered a common practice when you plan to migrate those virtual machines to hosts that do not include those capabilities.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/create-popup-modal",
+        "content": "---\ntitle: \"Create Popup Modal Ionic with Angular\"\ndate: 2020-05-13T14:55:27+01:00\ndraft: true\ntags: [\"ionic\", angular]\n---\n\nIn the button\n\nion-button (click)=\"addOperationHours()\" medium/ion-button\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/current-DC-vs-AC",
+        "content": "---\ntitle: \"Current DC vs AC\"\ndate: 2020-06-27T18:15:37+01:00\ndraft: true\ntags: [\"\"]\nauthor: \"M. Awad\"\n---\n\nDC\n\nDirect current. Current flows only one way from a DC source, an example of which is a battery.\n\n AC\n\nAlternating Current. Current flows one way from a source, reverses, and then flows the other way. This happens many times a second at a rate determined by the frequency which is typically 50 or 60 hertz. The mains supply in a home is AC.\n\nMultimeter is a measuring device with minimal to almost no resistance. \n\nMultimeter position\n\nIn order for a voltmeter to measure a device's voltage, it must be connected in parallel to that device. This is necessary because objects in parallel experience the same potential difference.\n\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/dataclasses-default-values-python",
+        "content": "---\ntitle: 'Dataclasses Default Values Python'\ndate: 2020-08-27T22:41:55+01:00\ndraft: true\ntags: ['python']\nauthor: 'M. Awad'\n---\n\nfrom dataclasses import dataclass\n\n@dataclass\nclass Book:\n    title: str = \"No Title\"\n    author: str = \"No Author\"\n    pages: int = 0\n    price: float = 10.0\n\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/dataclasses-python",
+        "content": "---\ntitle: 'Dataclasses Python'\ndate: 2020-08-25T21:31:13+01:00\ndraft: false\ntags: ['python']\nauthor: 'M. Awad'\n---\n\nIn python 3.6 and lower, the typical way to create a class in python with data members would be something like: !--more--\n\nclass Book:\n def init(self, title, author, pages, price):\n    self.title = title\n    self.author = author\n    self.pages = pages\n    self.price = price\n\nBy introducing dataclasses in version 3.7 the code became more concise, if you have an a typescript background, declaration of attributes are analogous to typescript\n\nfrom dataclasses import dataclass\n\n@dataclass\nclass Book:\n    title: str\n    author: str\n    pages: int\n    price: float\n\nb1 = Book(\"War and Peace\", \"Leo Tolstoy\", 1225, 39.95)\n\nprint(b1.description)\n\nSo as you see the class with @dataclass, and list the instance attributes with ther data type, In addition to that, it implements eq and repr behind the scene.\n\npost_init\n\nLooking back at the preceding dataclass example, question pop out as to how can we deal with attribute that depends on other attributes?\n\nThe answer is using post_init\n\n def post_init(self):\n        self.description = f\"{self.title} by {self.author}, {self.pages}\"\n\nWe can access the new introduced attribute description as below\n\nb1 = Book(\"War and Peace\", \"Leo Tolstoy\", 1225, 39.95)\n\nprint(b1.description)\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/disposition-effect",
+        "content": "---\ntitle: 'Disposition Effect'\ndate: 2020-09-08T22:06:49+01:00\ndraft: false\ntags: ['Thinking Fallacies']\nauthor: 'M. Awad'\n---\n\nFinance researches have documented a colossal preference for selling winners rather than losers bias that has been know as the disposition effect.\n\nThe disposition effect refers to investors’ hesitation to sell assets that have lost value and greater likelihood of selling assets that have made gains.\n\nA prudent agent would have a bird's eye view of the portfolio and sell off the stock that is most unlikely to do well down the line, whether it is a winner or a loser.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/dress-up-your-mac-charger",
+        "content": "---\ntitle: \"Dress Up Your Mac Charger\"\ndate: 2020-06-20T14:38:51+01:00\ndraft: false\ntags: [\"mac\"]\nfeatured_image: \"mac-charger.jpg\"\nauthor: \"M. Awad\"\n---\n\nOnce everyone at the office has the same mac machine, and some of them shares with you the extension cable, differentiate your mac charger with a swanky sticker from The Grommet.!--more--\n\nNot yet available for purchase outside US, but you can check out a third party international shipper.\n\nThe Grommet\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/enable-developer-mode-odoo",
+        "content": "---\ntitle: 'Enable Developer Mode Odoo'\ndate: 2020-08-16T16:29:34+01:00\ndraft: true\ntags: ['odoo']\nauthor: 'M. Awad'\n---\n\nUsing dev mode makes development with odoo as joy as it keep you free of\n\nManual server restart with every code change.\nRead view definitions directly from the XML files, so that we don't have to always to manual module upgrades.\n\nUse --dev option\n\nTo be able to automatically detect the changes in code files, the server developer mode\nrequires an additional dependency to be installed, python3-watchdog\n\npip3 install watchdog\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/error-handling-python",
+        "content": "---\ntitle: 'Error Handling Python'\ndate: 2020-08-07T20:02:34+01:00\ndraft: true\ntags: ['python']\nauthor: 'M. Awad'\n---\n\nThrow an exception in python\n\nYou can use the raise statement to raise an exception explicitly. raise is a simple statement with the following syntax:\n\nraise [expression1[, expression2]]\n\nUse the raise statement only to raise additional exceptions for cases that would normally be okay but that your specifications define to be errors. Do not use raise to duplicate the same error-checking that Python already, implicitly, does on your behalf.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/esxi-vs-vsphere-vs-vcenter",
+        "content": "---\ntitle: \"Esxi vs Vsphere vs Vcenter\"\ndate: 2020-10-16T23:50:30+01:00\ndraft: true\ntags: [\"virtualization\", \"devops\", \"vmware\"]\nauthor: \"M. Awad\"\n---\nvSphere\nvSphere is the name for VMware’s entire cloud computing virtualization platform (brand name for VMware’s suite of virtualization products and features. ) Its ultimate goal is to let you virtualize and aggregate the resources of the underlying physical hardware, and offer pools of virtual resources to your datacenter.\n\nOn the other hand ESXi and vCenter Server are two of the components of vSphere.\n\nESXi, the hypervisor, is the virtualization layer that runs immediately on physical servers. Its core function is to abstract the resources of the host, such as CPU, memory, and storage capacities, into multiple VM\n\n vCenter Server \n\nvCenter Server can be called a point for centralized configuring, provisioning, and managing the virtual infrastructure. The functionality of vCenter Server allows you to control access permissions, monitor performance and set up notifications.\n\nvSphere Client \nTo connect remotely to vCenter Server, you can use either vSphere Client or vSphere Web Client. With vSphere Client, you can establish a connection from any Windows-based PC, while vSphere Web Client allows you to access vCenter Server from a browser or other operating systems.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/ETF-vs-Shares-vs-MutualFunds",
+        "content": "---\ntitle: 'ETF vs Shares vs MutualFunds'\ndate: 2020-07-12T15:21:54+01:00\ndraft: true\ntags: ['Stock Market']\nauthor: 'M. Awad'\n---\n\nETF\n\nStands for Exchange-Traded Fund\n\nThe difference between a stock and an ETF is like the difference between a can of soup and a whole grocery store\n\nWhen you buy a stock you’re investing in a single company — Apple for instance. When that company does well, the stock price goes up and so does the value of your investment. When it goes down? Share is single unit of stock\n\nWhen you buy an ETF you’re buying a whole collection of different stocks (or bonds, etc.).\n\nBut more than that, an ETF is like investing in the market as a whole, rather than trying to pick individual “winners” and “losers.”\n\n ETF Advantages\n\nThere are a few advantages to ETFs, which are the cornerstone of the successful strategy known as passive investing.\n\nOne is that you can buy and sell them like a stock.\nAnother is that they're safer than buying individual stocks\n\nMutual Fund\n\nRun by a manager\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/fetch-vs-pull-post",
+        "content": "---\ntitle: \"Pull vs Fetch and use cases\"\ndate: 2020-04-15T21:20:52+01:00\ndraft: false\ntags: [\"Git\"]\n---\n\nThe difference between git fetch and git pull is that:\n\ngit fetch tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transferring. It's more like just checking to see if there are any changes available).\n\n!--more--\n\ngit pull on the other hand does that AND brings (copy) those changes from the remote repository.\n\nUse case to check what has been changed in remote without merging them yet\n\ngit fetch\ngit diff ..origin/master\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/FormArrayvsFormGroup",
+        "content": "---\ntitle: \"FormArray vs FormGroup\"\ndate: 2020-04-15T21:20:52+01:00\ndraft: false\ntags: [\"ionic\", \"angular\"]\n---\n\nThe important distinction between FormGroup and FormArray is that the data of the later serialized as an array !--more--(unlike being serialized as an object in the case of FormGroup).\n\nThe classic example of when we need to retrieve the data as an array, you don’t know beforehand how many controls will be kept around the group, for instance, dynamic forms.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/get-build-number-jenkins",
+        "content": "---\ntitle: \"Get Build Number Jenkins\"\ndate: 2020-05-18T00:17:27+01:00\ndraft: true\ntags: [\"jenkins\", \"groovy\", \"devops\"]\n---\n\nGetting the current build number is a simple affair in jenkins script, as you can always access the current build number via BUILD_NUMBER variable\n\n echo \"Current build number ${BUILD_NUMBER}\"\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/groovy-speical-sytnax",
+        "content": "---\ntitle: \"What does the [:] signify in groovy?\"\ndate: 2020-05-13T02:17:21+01:00\ndraft: false\ntags: [\"groovy\"]\n---\n\n[:] creates an empty Map\n\nJava counterpart is\n\nObject foo = new java.util.LinkedHashMap();\n\nIn Groovy we can assign default values to parameters in a method, so using the empty map is handy in this case\n\ndef call(Map config=[:]) {\n\n}\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-breadboard-works",
+        "content": "---\ntitle: \"How Breadboard Works\"\ndate: 2020-07-12T23:05:32+01:00\ndraft: true\ntags: [\"\"]\nauthor: \"M. Awad\"\n---\n\nJust about every breadboard is made of three sections: Two sets of very long power rails and the large middle section that is full of those 5-hole-long terminal strips.\n\nThe power rails are long columns used to distribute the power and ground connections along the entire circuit.\n\nThe rows have 5 teeth - one for each hole on the top of the breadboard. (The power rails have 50 teeth)\n\nThese little teeth are great at gripping onto electronic parts. When a part is pushed into the breadboard, the clip pushes open and grabs onto the metal leg. Any other parts that are plugged into the other 4 teeth are thus electrically connected together\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-does-books-stack-up-aginst-internet",
+        "content": "---\ntitle: \"How Does Books Stack Up Aginst Internet\"\ndate: 2020-05-18T01:50:24+01:00\ndraft: true\ntags: [\"reading\", \"books\"]\n---\nBooks are as matter of fact more reliable than the sources on the internet because they have been reviewed before publishing.\n\nBooks are the storehouse of single-topic information, it is comprehensive, specific and complete, all the information which is needed stores within,  books don’t confuse us, it never waste our brain energy to decide where to go next, the forward flip of each page makes that decision for us, reserving all our energy for learning.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-calculate-your-bmi",
+        "content": "---\ntitle: \"How to Calculate Your BMI\"\ndate: 2020-05-23T16:17:05+01:00\ndraft: false\ntags: [\"health\"]\n---\n\nWhat is the dividing line between overweight and obese\n\nMore than 25 BMI is considered overweight, while a person over !--more--30 is considered obese.\n\n How to work out your BMI in the first place\n\nThe formula to calculate your BMI is nothing more than Your weight in KG / (Your height in meter \\* Your height in meter)\n\nFor instance, if your Weight is 84 KG and your Height is 1.69m, your BMI is 84 / (1.69 \\* 1.69) = 29.4\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-cancel-sky-sport-mobile-tv",
+        "content": "---\ntitle: \"How to Cancel Sky Sport Mobile Tv\"\ndate: 2020-05-13T13:01:36+01:00\ndraft: true\ntags: [\"Ireland\"]\n---\n\nIn Vodafone website they mentioned that:\n\nEvery month you will receive an SMS with a link to cancel, 5 days before your subscription is renewed.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-convert-cassette-to-mp3",
+        "content": "---\ntitle: \"How to Convert Cassette to Mp3\"\ndate: 2020-05-15T01:48:18+01:00\ndraft: true\ntags: [\"misc\"]\n---\n\nDid you come across one of your beloved taps and you to resurrect it, you can do that by digitalizing it to MP3, good news there is couple of ways tro accomplish that.\n\nUsing Cassette Player & your laptop\n\nIf you have already a cassette player\n\n Using Cassette Player Tape Converter\n\nThis will set you back only 20 euro, but it's way easier all what you need is to get is Cassette Player Tape Converter\n\nhttps://www.techadvisor.co.uk/how-to/audio/how-convert-cassettes-mp3-3681221/\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-cook-rice-in-pressure-machine",
+        "content": "---\ntitle: \"How to Cook Rice in a Pressure Cooker\"\ndate: 2020-05-12T22:22:22+01:00\ndraft: false\ntags: [\"cooking\", \"instant pot\"]\n---\n\nMy Pressure King Pro I bought it over 3 years ago, I use it day to day basis for cooking rice in a few minutes.\n\n!--more--\n\nRinse 1 cup of rice using a bowl or a strainer.\nAdd a tablespoon of oil at the bottom of the bot.\nAdd the rice.\nAdd cup of water.\nSeason with salt and pepper and stir gently the content.\nPut the lid on.\nProgramme to rice.\n\nWhen the rice is cooked, make sure to empty all of the rice while it's still hot, then put some hot water with soap inside the pot and leave it for a while to get rid of the sticky rice.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-install-iOS-13-beta-profile",
+        "content": "---\ntitle: \"How to Install iOS 13 Beta Profile\"\ndate: 2020-05-20T01:25:56+01:00\ndraft: false\ntags: [\"iOS\", \"mac\"]\n---\n\niOS releases a major free update annually in June, that being said it wont be available for public access up till September.\n\nBut what if you can't wait to shake the new killer features out?!--more--You still can install a beta version, this tutorial reveals how to get iOS 13 beta installed in minutes.\n\nInstall iOS 13 developer beta\n\nThere are a couple of different ways you can install the developer beta, eiher over the air, or through iTunes.\n\n Install iOS 13 developer beta over-the-air\n\nOn your iOS device, navigate to the Apple Developer Program website and Log in with your Apple ID.\nGo to the Download sections and scroll down to Featured Downloads.\nTap the blue Download icon next to the iOS 13 beta.\nSelect the correct profile for your device, and install it.\nReboot.\nGo to Settings  General  Software Update and download the iOS 13 beta.\n\nInstall iOS 13 developer beta via iTunes\n\nInstalling iOS 13 developer beta via iTunes is more than a straightforward task:\n\nFirst, you need to install the latest version of iTunes and Xcode 11 beta on your Mac.\nHead on over to Apple's developer site and login in with your Apple ID.\nEnroll your Apple device's UDID.\nOnce you get enrolled, you'll be able to download the beta version of the iOS - select the exact iPhone, iPod touch or iPad model you're using from the list.\nExtract the file that downloads to your Mac (this should produce a .IPSW file)\nConnect your device to iTunes (if it isn't already) and tap the iOS device icon int he top-left.\nHold the Option key and hit the Restore iPhone button on the device's Summary tab (next to Check for Update).\nSelect the .IPSW file from the previous step, and tap Open.\nThe iOS beta will be installed on your iPad or iPhone in a few.\n\n How to get the public beta\n\nThe iOS 13 public beta has now launched. If you area after giving it a whirl, first, you'll need access Apple Beta.\n\nHit Sign Up on the Apple Beta page and register with your Apple ID.\nSign in to the Beta Software Program.\nClick Enrol your iOS device. (If you signed up for a previous version's beta last year you may need to uninstall the profile for that and then re-enrol for the new one.)\nNavigate to beta.apple.com/profile on your iOS device.\nDownload and install the configuration profile.\nThat will make the beta version available in the Settings app, under General, Software Update.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-make-homemade-burgers",
+        "content": "---\ntitle: \"How to Make Homemade Burgers\"\ndate: 2020-06-01T12:14:54+01:00\ndraft: false\ntags: [\"cooking\", \"BBQ\", \"recipe\"]\n---\n\nDid you run out of burgers, however the nearest butcher are either miles away or closed, but you still want to serve your half-starved guests those were waiting all winter long for you BBQ, !--more--\n\nGood news, you still can make your own burger at home with your stock up mince.\n\nIngredients\n\n1/2kg lean minced beef\n110g brown breadcrumbs, around 4 slices\nPinch of mixed herbs\n1 finely chopped small onion\n¼ beaten egg\n1 tbsp flour\nSalt and pepper\n\n Preparation\n\nMix beef, breadcrumbs, herbs, chopped onion in a bowl.\nNow blend this mixture with the beaten egg.\nShape mixture into 4 round shapes with a little flour\nFry or grill gently on both sides over a low heat until well cooked\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-placate-your-macbook",
+        "content": "---\ntitle: \"How to Placate Your Macbook\"\ndate: 2020-05-13T02:27:38+01:00\ndraft: true\ntags: [\"mac\"]\n---\n\nSide of charging matters\n\nIt turns out charging your mac from the right side, make significant difference.\n\n Put it to sleep.\n\nPut your macbook to sleep at the end of your day.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-share-part-of-heavy-text-document",
+        "content": "---\ntitle: \"How to Share Part of Heavy Text Document\"\ndate: 2020-07-01T00:53:46+01:00\ndraft: false\ntags: [\"chrome\", \"online-tools\"]\nauthor: \"M. Awad\"\n---\n\nChrome has just released the Link to Text Fragment Chrome extension, which unleashed the ability of creating a special link to the currently selected text on a page as easy as shooting fish in a barrel !--more--\n\nLink to Text Fragment Chrome  will add a new item in the context menu when you right click on the selected text.\n\n When this fragmented link visited, in addition to jumping to this particular part of the page, the selected text will be briefly highlighted in yellow. Super-handy and time-saver for heavy-text web pages and long documents.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-submit-sitemap-to-Google",
+        "content": "---\ntitle: \"How to Submit Sitemap to Google\"\ndate: 2020-05-14T22:29:24+01:00\ndraft: false\ntags: [\"SEO\"]\n---\n\nTo follow along with the following steps, you should have submitted your website to Google already. !--more--\n\nLogin to Google Search Console.\nForm the side navigation menu, select your website.\nDown in te sidebar, under the Index section Click on 'Sitemaps'.\nEnter the URL to your sitemap .e.g http://www.example.com/sitemap.xml\nHit the Submit button.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/how-to-use-disposable-BBQ",
+        "content": "---\ntitle: \"How to Use Disposable BBQ\"\ndate: 2020-05-27T19:33:11+01:00\ndraft: false\ntags: [\"BBQ\", \"party\", \"cooking\"]\n---\n\nThis post wants to give you a flavor of how to use disposable grill, but first you should know that there is no significant difference from any other traditional grills.!--more--\n\nThe great thing about disposable grills is that they contain everything your BBQ required with an excellent value for money!.\n\nThere are wide range of disposable grills in the market but cooking on almost every disposable grill follows the same steps:\n\nStarting off with the obvious, simply remove the outer packaging.\nThen, light the corner of the starter sheet and keep it going for about 15 minutes.\nOnce the charcoal reaches even temperature, and the coals turn grey, the BBQ is good to go.\n\nSo what's the catch?\n\nYou need to be forewarned of couple of things when dealing with disposable grill\n\nUnlike typical BBQs, disposable grill doesn't not take advantage from an adjustable height, so ensure it’s positioned in a safe place.\n\nBe mindful not to keep any flames before moving on with cooking as that could lead to a burnt outside raw inside dish.\n\n Do disposable grills give the same flavour as regular ones\n\nIf you think you disposable BBQ can’t give the same BBQ flavour, think again! Remember that the secret is in the sizzle - heated food releases fat that drips onto the charcoal and creates the smoke that makes your BBQ food tastes so good.\n\nHow long disposable grills remain hot\n\nDisposable grills tend to stay hot enough for BBQ for 1.5 hours thereafter ignition.\n\n Disposing the disposable grill\n\nOnce you’re done with BBQ is over, you need to put out them safely.\n\nEither Sand or water will be fine for this purpose, always protecting your hands. Once extinguished, leave the BBQ to cool down completely before dumping it safely. these types of grill are not designed for recycling so don’t throw them into the recycling bin.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/hugo-seo",
+        "content": "---\ntitle: \"Hugo Seo\"\ndate: 2020-05-28T22:30:14+01:00\ndraft: true\ntags: [\"hugo\", \"seo\"]\n---\n\nMake sure that you set the environment to production if use\n\nNOINDEX, NOFOLLOW for every page\n\nif you don't have the\n\n[params]\n    env=\"production\"\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/hyper-threading",
+        "content": "---\ntitle: \"Hyper Threading\"\ndate: 2020-10-18T11:41:42+01:00\ndraft: false\ntags: [\"hardware\", \"virtualization\"]\nauthor: \"M. Awad\"\n---\nHyper-threading (HT)  is a proprietary technology developed by Intel that boosts the parallelization of computations carried out on x86 processors.\n\nIn hyper-threading, a CPU divides each of its physical cores into virtual / logical cores known as threads.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/intreface-in-python",
+        "content": "---\ntitle: 'Interface in Python'\ndate: 2020-08-16T14:43:40+01:00\ndraft: false\ntags: ['python']\nauthor: 'M. Awad'\n---\n\nUnlike C sharp, Java, PHP and the list goes on, Python doesn't have explicit language support for interface.\n\nBut we can still attain the same concept by leaning on abstract class and multiple inheritance, take for example the JSONify abstract class below.\n\nfrom abc import ABC, abstractmethod\nclass JSONify(ABC):\n    @abstractmethod\n    def toJSON(self):\n        pass\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/ionic-layouts",
+        "content": "---\ntitle: \"Ionic Layouts\"\ndate: 2020-05-14T00:37:38+01:00\ndraft: true\ntags: [\"ionic\"]\n---\n\nAdjacent inputs in center of the page\n\nion-grid\n  ion-row\n    ion-col size-sm=\"6\" offset-sm=\"3\"\n      form\n        ion-grid\n          ion-row\n            ion-col\n              ion-item\n                ion-label position=\"floating\"From/ion-label\n                ion-input type=\"number\"/ion-input\n              /ion-item\n            /ion-col\n            ion-col\n              ion-item\n                ion-label position=\"floating\"To/ion-label\n                ion-input type=\"number\"/ion-input\n              /ion-item\n            /ion-col\n          /ion-row\n        /ion-grid\n      /form\n    /ion-col\n  /ion-row\n/ion-grid\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/ionic-list",
+        "content": "---\ntitle: \"Ionic List\"\ndate: 2020-05-13T01:50:26+01:00\ndraft: true\ntags: [\"ionic\"]\n---\n\nRemove the lines from list items\n\nUse the attribute lines=\"none\"\n\nion-list lines=\"none\"/ion-list\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/ionic-slide-drawer",
+        "content": "---\ntitle: 'Ionic 4 Slide Drawer'\ndate: 2020-07-29T22:32:26+01:00\ndraft: false\ntags: ['ionic']\nauthor: 'M. Awad'\n---\n\nCreating a side menu is a simple affair in ionic, just follow these simple steps:\n\nIn your in your root component, \"app.component.html\" add the below code as sibling to ion-router-outlet !--more--\n\nion-menu side=\"start\" type=\"push\"\n  ion-header\n    ion-toolbar color=\"dark\"\n      ion-title\n        Menu\n      /ion-title\n    /ion-toolbar\n  /ion-header\n  ion-content\n    ion-list\n     ion-menu-toggle auto-hide=\"true\"\n      ion-item routerLink=\"/\" ion-labelHome/ion-label/ion-item\n      ion-menu-toggle\n    ion-menu-toggle auto-hide=\"true\"\n      <ion-item routerLink=\"/Contact\"\n        ion-labelContact us/ion-label\n      /ion-item\n    /ion-menu-toggle\n      ion-item routerLink=\"/About\"\n        ion-labelAbout the app/ion-label</ion-item\n      \n    /ion-list\n  /ion-content\n/ion-menu\n\nAutomatically hide the menu upon navigation\n\nion-menu does not naturally close the menu item when navigate away by clicking on another menu item link, ion-menu-toggle is set out to serve this purpose.\n\nIn your pages that you need the humbugger menu to be sown up\n\nion-buttons slot=\"start\"\n  ion-menu-button/ion-menu-button\n/ion-buttons\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/ionic-slides",
+        "content": "---\ntitle: \"Ionic Slides\"\ndate: 2020-06-17T22:09:46+01:00\ndraft: true\ntags: [\"ionic\"]\n---\n ion-slides #slider../ion-slides\n\nFirst we use ViewChild to get the functionality of our ion-slides element by using   \n@ViewChild(\"slider\", { static: true }) slider;\n\nEvents\n\nUse ionSlideWillChange rather than ionSlideDidChange to avoid delay in some circumstances \n\n Lock the slider from movement \nTo lock slider form moving to another slider in case of validation for example \n\n this.slider.lockSwipeToNext(true);\n \n Same goes for the previous \n  this.slider.lockSwipeToPrev(true||false)\n\nForms\n\nevery form is represented by form tag\nform [formGroup]=\"slideOneForm\"\n/form\nform [formGroup]=\"slideThereForm\"\n/form\nform [formGroup]=\"slideTwoForm\"\n/form\n\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/IPV6-benfits",
+        "content": "---\ntitle: \"IPV6 Benfits\"\ndate: 2020-10-01T21:41:52+01:00\ndraft: false\ntags: [\"network\"]\nauthor: \"M. Awad\"\n---\nIPV6 protocol offers several benefits over IPV4, as its ability to handle packets more efficiently, boost performance, and security improvement.\n\nFurthermore, it allows internet service providers to reduce their routing tables footprint by turning them to be more hierarchical.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/jumper-wires",
+        "content": "---\ntitle: \"Jumper Wires\"\ndate: 2020-07-10T20:14:45+01:00\ndraft: false\ntags: [\"Raspberry Pi\"]\nauthor: \"M. Awad\"\n---\nJumper wires are as simple as the name suggests; they are wires that end with pins, enabling them to connect two points without having a lot of soldering overhead. Jumper wires are conventionally used with breadboards and other prototyping tools to make changes to the circuit as a joy. !--more--\n\nWhat Do the Colors Mean?\n\nAlbeit jumper wires come in many colors, colors have no special meaning. A red jumper wire is not dissimilar to a black one.  The colors work to your advantage, though, different types of connections, such as ground or power.\n\n Types of Jumper Wires\n\nJumper wires typically all into three configurations:\n\nmale to female\nmale to male (most common)\nfemale to female.\n\nThe difference between each is in the endpoint of the wire. Male ends have a pin protruding and can plug into things, while female ends do not and are used to plug things into. Male-to-male jumper wires are ubiquitous and what you likely will use most often. When connecting two ports on a breadboard, a male-to-male wire is what you’ll need.\n.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/level1-level2",
+        "content": "---\ntitle: 'Level1 Level2'\ndate: 2020-09-06T20:58:54+01:00\ndraft: true\ntags: ['Stock Market']\nauthor: 'M. Awad'\n---\n\nWhat's share outstanding\n\nShares outstanding is the amount of shares that a company has, those shares that have been issues by the company\n\n Float\n\nis the amount of shares that currently being trading in the market, the offset could be the company may ho,ding some of the shares for itself.\n\nOrder Book / level 2\n\nit lists number\n\n How to read Level 1\n\nASK (Best price for selling)\nBID (Best price for buying )\nSpread is the difference between the bid and the ask, that's important to keep eye out for ths spread, cause if it's big, and you changed your mind for some reason, you gonna lose this speared right away, in this case placing a limit order will be your best bit, otherwise market order is good, usually low speared mean less than 1 dolor\nLatest Price it's traded at\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/Limit-CPU-features-virtual-machines",
+        "content": "---\ntitle: \"Limit CPU Features to Virtual Machine\"\ndate: 2020-10-18T13:47:51+01:00\ndraft: false\ntags: [\"virtualization\", \"devops\"]\nauthor: \"M. Awad\"\n---\nYou can mask some of the CPU features to not be exposed to the virtual machine; a common example is \"AMD No eXecute (NX)\" and  \"Intel eXecute Disable (XD)\". It is considered a common practice when you plan to migrate those virtual machines to hosts that do not include those capabilities.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/long-scrolling-spreadsheet",
+        "content": "---\ntitle: \"Sticky spreadsheet header\"\ndate: 2020-04-15T21:20:52+01:00\ndraft: false\ntags: [\"spreadsheet\", \"MS-Office\"]\n---\n\nIn case you have a long scrolling spreadsheet, and keeping the headers matters you, use \"Freeze panes\" option to get your headers to stick around when you scroll down through rows of data.\n\n!--more--\n\nFirst, place your cursor in column A row 2. Then in spreadsheet (works in OpenOffice too), on the main menu, choose Window - \"Freeze panes.\" From there on in, the column heading will be visible even when scroll all the way down to the bottom of your spreadsheet.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/managed-package-vs-unmanaged-package",
+        "content": "---\ntitle: \"Managed Package vs Unmanaged Package\"\ndate: 2021-01-13T00:06:54Z\ndraft: true\ntags: [\"Salesforce\"]\nauthor: \"M. Awad\"\n---\nUnmanaged package \nThe developer who created and uploaded the unmanaged package has no control over the installed components, and can't change or upgrade them.\n\n Managed package\nManaged packages are also fully upgradeable. Specific destructive changes, like removing objects or fields, can not be performed to ensure seamless upgrades.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/multiple-inheritance-in-python",
+        "content": "---\ntitle: 'Multiple Inheritance in Python'\ndate: 2020-08-15T21:30:21+01:00\ndraft: true\ntags: ['']\nauthor: 'M. Awad'\n---\n\nSuper()\n\nsuper() alone returns a temporary object of the superclass that then allows you to call that superclass’s methods.\n\n Example\n\nclass A:\n    def init(self):\n        super().init()\n        self.foo = \"foo\"\n\nclass B:\n    def init(self):\n        super().init()\n        self.bar = \"bar\"\n\nclass C(A, B):\n    def init(self):\n        super().init()\n\nc = C()\nprint(c.foo, c.bar)\n\nInspect class resolution order\n\nCalling super is to ensure that the next method in line in the method resolution order (MRO) is called. This becomes important in multiple inheritance.\n\nclass A:\n    def init(self):\n        print(\"A\")\n        self.foo = \"foo\"\n\nclass B:\n    def init(self):\n        print(\"B\")\n        super().init()\n        self.bar = \"bar\"\n\nclass C(A, B):\n    def init(self):\n        print(\"C\")\n        super().init()\n\nc = C()\n\nThe above code wont print B, as A doesn't pass it a long to B by calling python super().init()\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/oddo-create-custom-module",
+        "content": "---\ntitle: 'Oddo Create Custom Module'\ndate: 2020-09-04T18:28:14+01:00\ndraft: true\ntags: ['odoo']\nauthor: 'M. Awad'\n---\n\nInstall teh module\n\n./odoo-bin -d myodoo -i library_app\n\nPay close attention to the server log messages to confirm that the module was found and\ninstalled. You should be able to see this specific message in the log:\nodoo.modules.registry: module library_app: creating or updating\ndatabase tables.\n\n Update a module\n\nodoo -u library_app\n\nWhen a module is updated, all other installed modules depending on it are also updated\nWhen Upgrade is needed:\n\nadding model fields\nchanging XML or CSV files\n\nWhen only restart is need:\n\nWhen changing Python code,including the manifest file\n\nWhen in doubt, the safest way is to restart the Odoo instance with the -u \\module\\\n\nYou can avoid manually restart odoo by using the dev=all option when you start odoo. It will automatically reload the changes made to your XML and Python files, as soon as they are saved.\n\nAdding Icon\n\nplace icon.png in static/description/ subdirectory\n\n Adding menu\n\nIn the root of the module directory create views/library_menu.xml\n\n?xml version=\"1.0\"?\nodoo\n!-- Library App Menu --\nmenuitem id=\"menu_library\" name=\"Library\" /\n/odoo\n\nIn order for odoo to pick up those module-related file we need to register it in the data attribute of manifest.py\n\n{\n    'name': 'Library Management',\n    'description': 'Manage library book catalogue and lending.',\n    'author': 'Mohamed Awad',\n    'depends': ['base'],\n    'application': True,\n    'data': [\n        'views/library_menu.xml',\n    ]\n}\n\nDoing that at this point won't have any visible effects. This menu item has no actionable submenu yet, and so won't be shown.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/odoo-add-field-to-model",
+        "content": "---\ntitle: \"Odoo Add Field to Model\"\ndate: 2020-07-23T23:14:41+01:00\ndraft: true\ntags: [\"odoo\"]\nauthor: \"M. Awad\"\n---\n\nAdd the field\n\nMake sure to enable the developer mode\nTechnical | Database Structure | Models\n\nFind your model\nClick on Edit\nScroll to the bottom of the page\n\nField Name: xiswork_team\nField Label: Is Work Team?\nField Type: boolean\n\nThe Field Name must start with x\\_. This is mandatory for Models and Fields created directly through the user interface.\n\nClick save and close\n\nNow, click on the upper-left save button to make this change permanent\n\n Adding a field to a form view\n\nOur new field is now available in the partners model, but it is not yet visible to users\n\nPick the field you want tka eit a sa reference\n\n<field name=\"category_id\"\nposition=\"after\"\nfield name=\"xiswork_team\" /\n/field\n\nWe can now Save & Close, then, in the Edit View: Form window, click Save, and\nfinally close it.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/odoo",
+        "content": "---\ntitle: 'Odoo'\ndate: 2020-07-05T20:01:53+01:00\ndraft: true\ntags: ['']\nauthor: 'M. Awad'\n---\n\nbrew install postgresql\nbrew services start postgresql\nsudo -u postgres createuser -s \\$USER\n\nBefore we can run Odoo, we need to install the Python dependencies declared in the\n\nrequirements.txt file:\n\n    pip3 install -r ~/odoo/requirements.txt\n\nThe script to start odoo is\n\n    odoo-bin --addons-path=addons -d mydb\n\nBy default, Odoo instances listen on port 8069, so if we point a browser to\nhttp://server-address:8069\n\nhttp://localhost:8069/\n\nTo stop the server and return to Command Prompt, press CMD + C\n\nList all database you have\n\npsql -l\n\n Remove database\n\ndropdb MyDB\n\nIn a clean installation, the .odoorc configuration file is not automatically created. We\nshould use the --save option to create the default configuration file\n\nodoo-bin --save --stop-after-init\n\ncat ~/.odoorc\n\nwe also used the --stop-after-init option to stop the server after it finishes its\nactions. This option is often used when running tests or asking to run a module upgrade to\ncheck whether it is installed correctly.\n\nWe can also choose to use a specific configuration file, using the --conf=filepath\noption (or -c filepath).\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/on-switching-from-Mac-to-RaspberryPi",
+        "content": "---\ntitle: \"On Switching From Mac to RaspberryPi\"\ndate: 2020-06-14T13:09:19+01:00\ndraft: false\ntags: [\"Raspberry Pi\", \"mac\"]\nfeatured_image: \"raspberry-pi.webp\"\n---\n\nA photo-journalist based in West Yorkshire Peter Garner recently replaced his Mac mini with a Raspberry Pi, and he's got some interesting insights into the process.!--more--\n\nPeter's experience is non-trivial, he makes a huge workflow transition. I've been reading Peter's slow progression to the Raspberry Pi for a while now with interest; he's a Mac power-user with strong dependencies on Microsoft Office and an absolute requirement for photo/graphics work. His most recent post details the switch completion.\n\nHow I migrated from a Mac Mini to a Raspberry Pi\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/open-extrenal-links-in-blank-page-hugo",
+        "content": "---\ntitle: \"Open External Link in Blank Page with Hugo\"\ndate: 2020-06-19T20:18:49+01:00\ndraft: false\ntags: [\"hugo\"]\n---\n\nMarkdown is limited when it comes to fine grain your rendered html, a classic example is opening external link in a new tab or window, however with the combination of markdown and hugo you can get the best of both worlds. !--more--\n\nWe wont mess around with any html or javascript here, it's all about configuration.\n\nSince the goldmark is the default markup rendering engine, you need to change that by switching to blackFriday, in your configuration file as the following\n\n[markup]\n    defaultMarkdownHandler = \"blackFriday\"\n    [markup.blackFriday]\n        hrefTargetBlank = true\n\nNow any external link in your site will open in a blank page when clicked from now on.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/open-visual-studio-code-from-termianl",
+        "content": "---\ntitle: \"Open Visual Studio Code From Terminal\"\ndate: 2020-05-17T22:18:10+01:00\ndraft: false\ntags: [\"vs code\"]\n---\n\nThere will be occasions when you need to open your favorite IDE visual studio from terminal, a common scenario could be to open a generated file while you are still in terminal, without switching the context. !--more--\n\nOpen Visual Studio Code and press Command + Shift + P \nType Shell in command palette and choose Install 'code' in PATH from suggested list in command palette.\n\nNow if you go to your terminal and type code, no surprise it will open visual studio code for you.\n\nYou can extend this to open a specific file  code path\\to\\file, or to open a directory / project code . if your are in the current path or \ncode path\\to\\dir ",
+        "tags": []
+    },
+    {
+        "uri": "/posts/outlook-multiple-time-zone",
+        "content": "---\ntitle: \"Outlook Multiple Time Zone\"\ndate: 2020-05-18T02:06:12+01:00\ndraft: false\ntags: [\"outlook\", \"ms\", \"mac\"]\n---\n\nMS outlook supports multiple time zones for appointments. The following is a list of the steps of how to enable this on MacOs:!--more--\n\nFirst, in the calendar right-click over the time scale in the day or week views, will give you a context menu with a few options, Select \"Manage additional time zones\".\nSelect the new timezone and give it a name for the zones .e.g US.\nMake sure you select the checkbox \"show second time zone in Day and Week view\".\nThe second time zone column will appear in the calendar, upon closing the pop-up dialog.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/paramaterize Jenkins pipeline example",
+        "content": "---\ntitle: \"Parameterize Jenkins pipeline\"\ndate: 2020-04-15T21:20:52+01:00\ndraft: false\ntags: [\"jenkins\", \"groovy\", \"devops\"]\n---\n\nSay you need to have a parameter represents the branch so the developer can execute the build against a branch of their choice !--more--\n\nClick configure in your job.\nCheck This project is parameterized\nSelect String parameter and give it name and optional a default value, in our case we set to master.\n   \nYou can start using this parameter as \\${branch}\n   \n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/Path-operations-python",
+        "content": "---\ntitle: \"Path Operations Python\"\ndate: 2020-07-16T20:14:23+01:00\ndraft: true\ntags: [\"python\"]\nauthor: \"M. Awad\"\n---\n\nGet the root path of a file\n\nimport os\nfrom os import path\n src = path.realpath(\"textfile.txt\")\n root_dir, tail = path.split(src)\n\nNow rootdir hold the rootpath of the file\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/photo-rights-in-ireland",
+        "content": "---\ntitle: \"Photo Rights in Ireland\"\ndate: 2020-05-13T13:18:50+01:00\ndraft: true\ntags: [\"legal\"]\n---\n\nNutshell: you have the right to take photos in public places\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/Pub-Sub-vs-Message-Queue",
+        "content": "---\ntitle: \"Pub Sub vs Message Queue\"\ndate: 2020-05-26T01:04:32+01:00\ndraft: true\ntags: [\"architecture\"]\n---\n\nMessage Queue should not to be confused with publish-subscribe, this post attempts to give you a high-level distinction between the two ubiquitous messaging approaches\n\nMessage Queue\n\nIn message Queue only one single consumer will receive each message on the topic. Which consumer receives which message is dictated by the implementation of the message queue.\n\nTo ensure that a message is only processed by one consumer, each message is removed from the queue upon receiving and processing by a consumer (for instance once a consumer has acknowledged consumption of the message to the messaging system).\n\n Pub Sub\n\nHowever, in contrast to message queuing, publish-subscribe messaging allows multiple consumers to receive each message in a topic.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/python-Basics-of-file-handling",
+        "content": "---\ntitle: \"Python Basics of File Handling\"\ndate: 2020-07-14T22:58:33+01:00\ndraft: false\ntags: [\"python\"]\nauthor: \"M. Awad\"\n---\n\nWorking with files is a simple affair in Python, as Python supports files handling natively, so no need to import any library for this purpose!--more--\n\nOpen a file for writing\n\n Create a file if it doesn't exist\n\nf = open(\"textfile.txt\", \"w+\")\nfor i in range(10):\n    f.write(\"This is line \" + str(i) + \"\\r\\n\")\nf.close()\n\nAlong side the filename the open function is given \"w+\" as a second arguments\n\nw denotes open for write in addition to that, it will create a file if it does not exist.\n\\+ sign signifies both read and write.\n\nWrite and append to a file\n\nWhat if you don't want to overwrite the content of the file and just append to the current content\n\n    f = open(\"textfile.txt\", \"a\")\n\nThe rest of the above code remains the same just omitted for brevity.\n\n Read file in python\n\nRead the entire content of the file\n\n  f = open(\"textfile.txt\", \"r\")\n  if f.mode == 'r':\n        contents = f.read()\n        print(contents)\n\nThe guard clause is just to make sure the file is opened successfully.\n\nJust as there are several ways to open the files to write in python, there is several way to open file for reading\n\n Read files in python line by line\n\nThere will be occasions when you need to open read the file inclemently in python\n\n f = open(\"textfile.txt\", \"r\")\n if f.mode == 'r':\n        fl = f.readlines()\n        for x in fl:\n            print(x)\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/Python-for-PHP-developers-part-1.md",
+        "content": "---\ntitle: \"Python for PHP developers part-1\"\ndate: 2020-06-28T00:56:02+01:00\ndraft: false\ntags: [\"python\", \"php\"]\nauthor: \"M. Awad\"\n---\n\nHow does Python differ from PHP?\n\n Variables in Python vs PHP\n\nUnlike php there is no special characters to signifies a variable in python,\n\nx, y= 10, 100\n\nCode block\n\nTo distinguish code blocks, PHP like any classic programming language depends on braces, more precisely, curly braces, that's not case when it comes to python, python hinges on indention.\n\ni = 1\nwhile i < 6:\n  print(i)\n  i + = 1\n\n Conditional\n\nThere is no significant difference between python and php in terms of conditional, may be the only subtle difference of elif in python is the equivalent of else if in php.\n\nExpression can precede condition\n\nPython doesn't support same ternary operator not exactly but not far off being concise\n\na if condition else b\n\nst = \"x is less than y\" if  (x<y) else \"x is greater than or the same as y\"\n\n Loop\n\n while(x < 5):\n    print(x)\n    x = x+1\n\nPython doesn't have do-while loop, it supports only while and for loop, speaking of for loop, python doesn't have the traditional form of for loop for(x = 0 ; x  5 ; x++), there is no loop counter like you see in javascript, for in python is iterative\n\nfor x in range(5,10)\n    print(x)\n\nHowever if you have a use case that requires a counter, the enumerate() function lend itself to this purpose, as it adds a counter to the iterable and returns it in a form of enumerate object.\n\ndays = [\"MON\", \"TUE\", \"WED\", \"THU\", \"FRI\"]\n    for i, d in enumerate(days):\n        print(i, d)\n\nThe output will be\n\n0 MON\n1 TUE\n2 WED\n3 THU\n4 FRI\n\nFunction in python vs php\n\nFunction is defined by the keyword 'def' in python whereas it's function in php\n\n Splat operator\n\nThis feature allows you to capture a variable number of arguments to a function\n\nfunction calc($currency, ...$rates) {\n    foreach($rate in $rates) {\n        print(currency * rate)\n    }\n}\n\nin php we use the ..., the equivalent inn python is \\*\n\ndef calc(currency, *rates):\n    for rate in rates:\n        print(currency * rate)\ndef main():\n    calc(20, 2)\n    calc(20, 2, 3)\n    calc(20, 2, 3, 4)\n\nNamed parameters\n\nUnlike php python supports name parameters, so called keyword parameters\n\ndef my_function(child3, child2, child1):\n  print(\"The youngest child is \" + child3)\n\n my_function(child1 = \"Tobias\", child3 = \"Linus\", child2 = \"Emil\")\n\nNotice that, the order doesn't matter as long as you call out all of the parameters\n\n<!--  Use library\n\nfrom datetime import date\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/Python-for-PHP-developers-part-2",
+        "content": "---\ntitle: \"Python for PHP Developers Part 2\"\ndate: 2020-07-04T17:52:35+01:00\ndraft: true\ntags: [\"\"]\nauthor: \"M. Awad\"\n---\n\nClasses\n\nclass myClass():\n    def method1(self):\n        print(\"myClass method1\")\n\n    def method2(self, something):\n        print(\"my class method2 \", something)\n\nin the main function\n\ndef main():\n    c = myClass()\n    c.method1()\n    c.method2(\"This is a string\")\n\nOne of the occasion that you may need to pass the this around is when you call it inside a child class\n\nInheritance\n\nclass myClass():\n    def method1(self):\n        print(\"myClass method1\")\n\n    def method2(self, someString):\n        print(\"myClass method2 \", someString)\n\nclass childClass(myClass):\n    def method1(self):\n        myClass.method1(self)\n        print(\"childClass method1\")\n\n    def method2(self, someString):\n        print(\"childClass method2 \", someString)\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/ramdan-tips",
+        "content": "---\ntitle: \"How to survive Ramdan in the west\"\ndate: 2020-05-13T01:19:50+01:00\ndraft: true\ntags: [\"ramdan\"]\n---\n\nIt's a long day here in Europe\n\nChew food slowly specially in the suhoor, otherwise you will end up suffering of indigestion at bed time and can be extended to next day.\n\nHave Fava beans at suhoor, it allows the consumer not to feel hungry for the rest of the day, as it takes a long time for the stomach to digest, make sure you put some cumin over it.\n\nLimit your drinking of water to 1 L / hour, as can only get rid of about 1 L each hour. dirking much water makes it hard for your kidneys to keep up when you drink more than 1 L per hour\n\nDon't eat your suhoor just before going to bed, leave at least 1 hour.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/raspberry-pi-cloud",
+        "content": "---\ntitle: \"Raspberry Pi Cloud\"\ndate: 2020-05-31T23:25:42+01:00\ndraft: true\ntags: [\"Raspberry Pi\"]\n---\n\nWhy to use Raspberry Pi for cloud\n\nRaspberry Pi has a very low energy footprint using it as an always-on web server makes it an ideal choice.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/regression-to-the-Mean",
+        "content": "---\ntitle: 'Regression to the Mean'\ndate: 2020-07-26T12:35:10+01:00\ndraft: false\ntags: ['Statistics']\nauthor: 'M. Awad'\n---\n\nRegression toward (or to) the mean is the phenomenon that arises if a sample of a random variable is extreme, a future sample will be closer to the mean or average on further measurements !--more--\n\nWhy Does Regression to the Mean Happen?\n\nRegression to the mean tend to happens due to sampling error. A proper sampling method is to randomly sample from the population. If you don’t (i.e. if you asymmetrically sample), then your results may be abnormally high or low for the average and therefore would regress back to the mean. Regression to the mean can also happen because you take a very small, unrepresentative sample (say, the highest 1 percent of the population or the lowest ten percent).\n\n Regression to the mean and co-relation\n\nWhenever the correlation between two variable is imperfect, there will be regression to the mean.\n\nReal life examples\n\nThe Sports Illustrated jinx is a good case in point of regression to the mean. The jinx states that whoever appears on the cover of SI is going to have a poor following year (or years). But the “jinx” is actually regression towards the mean. Most players have good games, and they have bad games. A winning streak is usually just that: a lucky streak. And it leads to being on the cover of SI. But it’s statistically likely to be followed by a fall back to average performance.\n\nOur mind try to search for causality, ignoring the regression part\n\n Correction\n\nStart with an estimate of the average (assuming there is no relation)\nDetermine the value that matches your impression of the evidence.\nObtain / Estimate the correlation .\nIf the correlation is .30, move 30% of the distance from the average to the matching impression.\n\nExample\n\nRelationship between the quality of the CEO and successful firms\n\n Correlation\n\nA very generous estimate of the correlation between the success of the firm and the quality of its CEO might be as high as .30, indicating 30% overlap.\n\nYour Impression of the evidence\n\nIn a well-ordered and predictable world, the correlation would be perfect, and the stronger CEO would be found to lead the more successful firm in 100%\n\n Average\n\nIf the relative success of similar firms was determined entirely by factors that the CEO does not control (call them luck, if you wish), you would find the more successful firm led by the weaker CEO 50% of the time.\n\nCorrection formula\n\nStronger CEO = AVG + (DISTANCE between impression and AVG) - correlation\nSuccessful CEO = 50 + (100 -50) \\* .3 = 50 + 15 = 65%\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/rename-files-in-bulk-form-terminal",
+        "content": "---\ntitle: \"Rename Files in Bulk Form Terminal\"\ndate: 2020-07-04T00:35:51+01:00\ndraft: true\ntags: [\"mac\", \"command-line\"]\nauthor: \"M. Awad\"\n---\n\nFree command rename ... and can rename multiple files quickly and easily.\n\nSearch and replace words in filenames, convert to upper or lower case, or crop filenames to a certain length. rename! also supports ID3 tags (music file information) and regular expressions. Great for renaming batches of music files or digital photos right off the camera.\n\nbrew install rename\n\nconvert to lower case\n\nrename -c \\*.txt\n\nconvert to upper case\n\nrename -C  .*json\n\nYou can use the dry-run mode to see the result before commit changes\n\nrename -C -n *.json\n\nYou can enforce changes as well by using -f flag\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/salesforce-echosystem-for-classic-developer",
+        "content": "---\ntitle: \"Salesforce ecosystem for Classic Developer\"\ndate: 2020-05-29T22:45:27+01:00\ndraft: true\ntags: [\"salesforce\"]\n---\n\nCustom filed name ends with \\_\\_c, as stands for custom field\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/salesforce-process-builder",
+        "content": "---\ntitle: \"Salesforce Process Builder\"\ndate: 2020-05-29T22:55:39+01:00\ndraft: true\ntags: [\"salesforce\"]\n---\n\nTo check if a field is null (not populated)\n\n| Field    | Value                  |\n| -------- | ---------------------- |\n| Operator | Equals                 |\n| Type     | Global Constants       |\n| Value    | \\$GlobalConstants.Null |\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/SAN-vs-SDS",
+        "content": "---\ntitle: \"SAN vs SDS\"\ndate: 2021-01-13T00:22:58Z\ndraft: true\ntags: [\"virtualization\"]\nauthor: \"M. Awad\"\n---\nUnlike SAN, which replaces the server hard disk with controller and hard drives, SDS can tap into those servers' local hard drives, abstracting them from the physical devices and providing accessibility to all servers.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/set-password-on-behalf-of-users-salesforce",
+        "content": "---\ntitle: \"Set Password on Behalf of Users Salesforce\"\ndate: 2020-06-21T23:01:47+01:00\ndraft: false\ntags: [\"salesforce\"]\nauthor: \"M. Awad\"\n---\n\nSay yon want to recycle one or more users without going in relatively lengthy process of changing the email, or for any other legitimate reason.!--more--\n\nTake a note of the user’s id from the URL.\n\nOpen Developer Console.\n\nSelect Debug  Open Execute Anonymous Window in the menu.\n\nEnter the following one-liner of Apex code. Replace the user and Password with yours.\n\n System.SetPassword('YOURUSERID', 'YOURPASSWORD');\n\nClick Execute\n\nOh, and a side note if you want to update the password for multiple users, you need use different password for each.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/shared-library",
+        "content": "---\ntitle: \"Hands-on Jenkins Shared Library\"\ndate: 2020-05-13T02:10:55+01:00\ndraft: true\ntags: [\"jenkins\", \"groovy\", \"devops\"]\n---\n\nWhat do we get with Shared Library\n\nReusing code, the shared library is a good deal and can help save a lot of copy and paste.\nYou can create a reusable pipelines, which unleash the ability to enforce standards\n   You need to place your scripts in a vars directory\n\n Create a shared library\n\nExtract your part or your whole pipeline to shared library, for the most part you need just to wrap your code in a call function,.\n\ndef call(Map config=[:]) {\n\n}\n\nThe call method accepts a Map, that can be utilized by the Jenkisnfile, We’ll take a closer look at how to use it later.\n\nAdd a shared library\n\nClick in Manage Jenkins in Jenkins and go to Configure System\nScroll down to Global Pipeline Libraries\nClick add and give a name of your library .e.g shared_lib\nSet the default version, it may be a branch name .e.g master or a tag\nSelect the check box next to Load implicitly.\nForm Retrieval method section select Modern SCM.\nSelect Git Under code Management, and paste your repo.\nClick Save.\n\n How to use the library in your pipeline\n\nIn your Jenkisfile you can now call your library with the given name\n\nnode {\n    stage('SCM') {\n        echo 'Gathering code from  version control'\n    }\n    stage('Build') {\n        echo 'Building ...'\n        echo 'Building new feature'\n\t    shared_lib()\n    }\n    stage('Test'){\n        echo 'Testing ...'\n    }\n    stage('Deploy'){\n        echo 'Deploying ...'\n    }\n\n}\n\nPassing configuration\n\nsharedlib(myflag: \"false\")\n\nAnd inside our library code we can access this variable .e.g\n\nif (config.my_flag != \"false\") {\n\n}\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/show-hide-slider-controls-ionic",
+        "content": "---\ntitle: \"Show and Hide Slider Controls with Ionic\"\ndate: 2020-06-17T23:53:15+01:00\ndraft: false\ntags: [\"ionic\"]\n---\nWe have a slider composed of 3 slides, obviously we need to hide the previous button in the first slide and next button in the last slide !--more--\n\nBelow is the slider in our template, the full structure of the slider were omitted for brevity \n \n ion-slides #slider .../ion-slides\n  ion-button Prev /ion-button\n  ion-button Next/ion-button\n\nWe use ViewChild to get the functionality of our ion-slides as following   \n@ViewChild(\"slider\", { static: true }) slider;\nInside the class will add a couple of boolean properties called isNextButtonVisible and isPrevButtonVisible\nisNextButtonVisible = true;\nisPrevButtonVisible = false;\n\nLet's add a utility function to control the state of those controls, the function is given the slideIndex\n\n @ViewChild(\"slider\", { static: true }) slider;\n  \n  isNextButtonVisible = true;\n  isPrevButtonVisible = false;\n  \n  prevOrNextButton(slideIndex: number) {\n    this.isPrevButtonVisible = slideIndex !== 0;\n    this.isNextButtonVisible = slideIndex !== 2;\n  }\n  \nWe will make use of the event slideWillChange()\n\n ion-slides #slider (ionSlideWillChange)=\"slideWillChange()\"\n     ...\n /ion-slides\n  ion-button Prev /ion-button\n  ion-button Next/ion-button\n\nInside the slideWillChange() will call prevOrNextButton passing the active slideIndex\n\n  isNextButtonVisible = true;\n  isPrevButtonVisible = false;\n  prevOrNextButton(slideIndex: number) {\n    this.isPrevButtonVisible = slideIndex !== 0;\n    this.isNextButtonVisible = slideIndex !== 2;\n  }\n slideWillChange() {     \n    this.slider.getActiveIndex().then((slideIndex) = {\n      this.prevOrNextButton(slideIndex);\n    });\n  }\n\n Finally let’s change the template a bit to include the condition for hide/show controls \n\n  ion-button *ngIf=\"isPrevButtonVisible\" Prev /ion-button\n  ion-button  *ngIf=\"isPrevButtonVisible\"Next/ion-button\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/simple-lambda-post-request",
+        "content": "---\ntitle: \"Simple Lambda Post Request\"\ndate: 2021-01-12T23:03:07Z\ndraft: true\ntags: [\"Serverless\", \"Lambda\"]\nauthor: \"M. Awad\"\n---\nCreate a  lambda function function sum\n\nexports.handler = async (event) = {\n    const body = JSON.parse(event.body);\n    const value1 = body.value1;\n    const value2 = body.value2;\n    const sum = value1 + value2;\n    let response = {\n        statusCode: 200,\n        body: The result is ${sum}\n    };\n    return response;\n};\n\nAmazon API gateway\nDelete ANY and create a new method \n\n Postman\n{\n  \"value1\" : 10,\n  \"value2\" : 10\n}\n`",
+        "tags": []
+    },
+    {
+        "uri": "/posts/Software-defined-data-center-SDDC",
+        "content": "---\ntitle: \"Software Defined Data Center SDDC\"\ndate: 2020-10-16T20:49:46+01:00\ndraft: false\ntags: [\"virtualization\", \"devops\"]\nauthor: \"M. Awad\"\n---\nWhat is software-defined data center?\nThe software-defined data center approach extends industry-leading virtualization beyond computing, network and storage, making data center services painless in terms of configuration and managing virtual machines.\n\nThe SDDC integrates those virtualization layers, creating a single, hyperconverged environment that facilitates IT resources delivery as a service — without regard to whether the SDDC is deployed in a private, public or hybrid cloud environment. A single management platform standardizes management across the virtualization layers and enables policy-based automation that simplifies operations.\n\n Software-defined data center components\n\nCloud Management Layer\nSevice Catalog: The Cloud Management layer comprises the service catalog that houses the facilities to be deployed. Catalog items are unique applications, infrastructure, or other services accessible in the catalog. \n\n The orchestration offers the workflows to deploy catalog items; for example, you can give it a list of the servers' IPs,  with a base of hypervisor installed on them, and request a workload domain; from this point onwards, it will orchestrate and take care of all the components into it, therefore it will make sure all the hosts have the same hypervisor installed and deploy the software-defined networking, etc.\n   \n a self-service portal that allows end-users to use the SDDC.\n\n Virtual Infrastructure Layer \n\nDecoupling resources from the physical layer,  additional processes, and technologies build on top of the infrastructure to bring forth infrastructure as a Service (IaaS) and platform as a service (PaaS).\n\nHypervisor. \nResource Pooling, when creating your clyster , you can create a virtual pool when you say how much resources individual logical groups, for example, if we have three different types of applications A, B, and C, you can say application A should have 50% of the resources we have and B, C 25% each so you can do that through resource pooling, or you can say first come first served.\nVirtualization control.\n\nPhysical layers \nCompute.\nNetwork, you need a physical network connected to the servers to access the servers and the virtual machines.\nStorage, for example, block storage, file storage, and a variety of others.\n\n Business Continuity\nFault Tolerance: If you need to have an immediate failover, you still have to have a cluster solution, but you still enable individual virtual machines fault tolerance. By   having a standby copy of the same VM, so if the host that has the virtual machine fails, it  can switch automatically to the other VM.\n   \nDisaster recovery, so you can have a replication goes to another site. If one of the sites, the whole data center loses power, burns down, or even explodes, you can have a ready a secondary site where you have a constant replication; you can switch over.\n   \nBackup and restore: The general rule of having your backup in multiple locations, one of them should be offline, that what you supposed to have, one use case if you hit by cryptolocker, so if the datastore is encrypted and you have your back settings in the same site, there is a very high chance the backup will be affected as well.\n\nSecurity \nCompliance, for example, if you are working in healthcare so your infrastructure should be compliant.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/storage-medهa-types",
+        "content": "---\ntitle: \"Storage Media Types\"\ndate: 2020-10-17T20:43:42+01:00\ndraft: false\ntags: [\"storage\", \"hardware\"]\nauthor: \"M. Awad\"\n---\n\nSAS VS SATA \n\nSAS and SATA are two technologies used to ferry instruction and data from the motherboard to a storage drive.\n\nBefore we proceed any further, it is important to know that SATA nor SAS isn't a storage drive per se. Instead, storage drives like SSD and HDD may be built with SATA or SAS connectors.\n\n SATA\nSATA shines when data is being transferred into the storage drive. On the flip side, SATA doesn't work that well when it transfers data out of the storage drive.\n\nSAS (Serial attached SCSI)\nSevers typically support SAS (Serial attached SCSI) pronounced \"scuzzy\" or Serial Attached Small Computer System Interface, which provides higher performance than SATA in server environments.\n \nYou can have SAS in your PC; that being said,  you won't get as much performance because they optimized for server environments where multiple clients are accessing the disk simultaneously.\n\nAgain SAS is beyond media type and connection; it's architecture as well.\n\nUnlike SATA, SAS has backward compatibility; your SAS drive bay, whether in your server or your storage system, can take SAS SSD, SAS HDD, SATA SSD, SATA HDD drives. It doesn't work the other way around, though.\n\n SDD vs. HDD \n\nSDD drives provide the highest performance, but that doesn't come cheap; SDD has the highest GB cost.\n\nSATA HDD available in a larger size with a lower cost.\n\nSAS HDD provides a happy medium between performance, capacity, and cost.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/string-interpolation-in-python",
+        "content": "---\ntitle: 'String Interpolation in Python'\ndate: 2020-08-07T20:24:35+01:00\ndraft: true\ntags: ['python']\nauthor: 'M. Awad'\n---\n\nf-Strings in python\n\nPython 3 has powerful string formatting and templating mechanisms that allow us to construct strings comprised of hardcoded text and interspersed variables. it's more concise that the old techniques\n\nname = \"Jack\"\nage = 5\nprint(f\"Hello, {name}. You are {age} old.\")\n\nYou can use f-strings with all valid expression\n\nf\"{2 * 37}\"\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/substitute-easy-question-for-the-harder-one",
+        "content": "---\ntitle: 'Substitute Easy Question for the Harder One'\ndate: 2020-07-26T20:46:49+01:00\ndraft: true\ntags: ['']\nauthor: 'M. Awad'\n---\n\nSubjects are shown a wheel of fortune. Unbeknownst to them, the wheel only stops on numbers 10 and 65. After the wheel is spun, subjects are asked a totally unrelated question: What is your best guess of the percentage of African nations in the UN? The average estimate of people who have just seen the number 10 is 25%. The average estimate of people who have just seen the number 65 is 45%. The answers are anchored by the previous information, even when there was no link between them.\n\nIn Kahneman’s new book, he writes, “When confronted with a problem — choosing a chess move or deciding whether to invest in stock — the machinery of intuitive thought does the best it can. If the individual has relevant expertise, she will recognize the solution, and the intuitive solution that comes to her mind is likely to be correct.” But when the question is difficult and a skilled solution is not available? We answer an easier and related question. If the question is “Should I invest in Ford Motor Company stock?” the easier question to answer is “Do I like Ford cars?”\n\nInvesting, playing chess, weighing a management dilemma — the processes are similar. “This is the essence of intuitive heuristics: when faced with a difficult question, we often answer an easier one instead, usually without noticing the substitution,” says Kahneman.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/taboo-trade-off",
+        "content": "---\ntitle: 'Taboo Trade Off'\ndate: 2020-09-08T23:23:34+01:00\ndraft: true\ntags: ['Thinking Fallacies']\nauthor: 'M. Awad'\n---\n\nThe survey of parents’ reactions to a potentially hazardous insecticide mentioned earlier also included a question about the willingness to accept increased risk. The respondents were told to imagine that they used an insecticide where the risk of inhalation and child poisoning was 15 per 10,000 bottles. A less expensive insecticide was available, for which the risk rose from 15 to 16 per 10,000 bottles. The parents were asked for the discount that would induce them to switch to the less expensive (and less safe) product.\n\nMore than two-thirds of the parents in the survey responded that they would not purchase the new product at any price! They were evidently revolted by the very idea of trading the safety of their child for money.\n\nThe minority who found a discount they could accept demanded an amount that was significantly higher than the amount they were willing to pay for a far larger improvement in the safety of the product.\n\nAnyone can understand and sympathize with the reluctance of parents to trade even a minute increase of risk to their child for money. It is worth noting, however, that this attitude is incoherent and potentially damaging to the safety of those we wish to protect. Even the most loving parents have finite resources of time and money to protect their child (the keeping-my-child-safe mental account has a limited budget), and it seems reasonable to deploy these resources in a way that puts them to best use.\n\nMoney that could be saved by accepting a minute increase in the risk of harm from a pesticide could certainly be put to better use in reducing the child’s exposure to other harms, perhaps by purchasing a safer car seat or covers for electric sockets.\n\nsockets. The taboo tradeoff against accepting any increase in risk is not an efficient way to use the safety budget. In fact, the resistance may be motivated by a selfish fear of regret more than by a wish to optimize the child’s safety.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/test",
+        "content": "---\ntitle: \"Test\"\ndate: 2020-06-21T19:08:28+01:00\ndraft: true\ntags: [\"\"]\nauthor: \"M. Awad\"\n---\n\n{{ instagram BWNjjyYFxVx }}\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/theory-induced-blindness",
+        "content": "---\ntitle: 'Theory Induced Blindness'\ndate: 2020-08-09T23:05:23+01:00\ndraft: true\ntags: ['Thinking Fallacies']\nauthor: 'M. Awad'\n---\n\nOnce you have accepted a theory and used it as a tool in your thinking, it is extraordinary difficult to notice its flaws, if you come upon an observation that doesn’t seem to fit the model, you assume that there must be a perfectly good explanation that you are some-how missing\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/thick-provisioning-vs-thin-provisioning",
+        "content": "---\ntitle: \"Thick Provisioning vs Thin Provisioning\"\ndate: 2020-10-19T19:33:39+01:00\ndraft: false\ntags: [\"storage\", \"virtualization\"]\nauthor: \"M. Awad\"\n---\nWhen you create a virtual machine, you have to elect storage, and you have two options, thick and thin, so what are thick provisioning and thin provisioning, and how they differ.\n\nThin Provisioning\nAllocates storage as needed. It's cost-effective and mostly used for file/objects' storage; the S3 bucket is an example.\n\n Thick provisioning \nThick storage allocates virtual storage at the time of the request, so let's say you decide you're going with two terabytes of storage, which means you will get all of the two terabytes at the time of creation. \n\nOf course, it’s quite likely that you will end up not using all of those two terabytes, so obviously it's not space-efficient, but on the upside, it gives a performance hit as the storage doesn't need to grow at the time you need to. Mostly used for creating virtual DAS, in AWS, it's used EBS volume. \n\nSo why to go with think provisioning?\n\nBefore any blocks could be used, the blocks have to zero first, so if you are writing some data, the block that is being written to it has to have 0 in it, which can take a little time and consumes resources.\n\n Thick-provisioning Eager-zeroed\nIn the case of thin provisioning, the implications of that 0 initialization will delay the actual data being written to the block.\n\nSo, in the case of an intensive writing workload like SQL virtual machine or SharePoint, eager-zero thick provisioning is recommended.\n\nOne drawback of Eager-zeroed, though, it requires more time to delete all write the data at the time of the creation.\n\nThick-provisioning lazy-zeroed \nLike eager-zeroed lazy zeroed disk, it takes all of the space at creation time, but this space may still hold some old data. This old data will be deleted and zeroed as needed.",
+        "tags": []
+    },
+    {
+        "uri": "/posts/translation-vs-localization",
+        "content": "---\ntitle: \"Translation vs Localization\"\ndate: 2020-05-16T20:30:24+01:00\ndraft: true\ntags: [\"\"]\n---\n\nTranslate\n\n Localize\n\nCan share the same language but still there is a need for localized it to the locale .e.g American English vs British English, in food name for example Eggplant in US is called Aubergine in Britain and Ireland.\n\nHowever Localization is beyond Language, it includes but not limited to:\n\nUnits (Imperial vs. metric measurements)\nCurrency (dollar vs euro )\nDate format\n\nThere is an arguably standard locale codes\n\nen-US = American English\nen-GB = British English\nes-ES = Spanish (Spain)\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/troubleshoot-scripted-jenkins",
+        "content": "---\ntitle: \"NotSerializableException scripted Jenkins\"\ndate: 2020-05-24T03:15:22+01:00\ndraft: false\ntags: [\"jenkins\", \"groovy\", \"devops\"]\n---\n\nIf you receive NotSerializableException, in your scripted pipeline or share library, there are couple of reasons: !--more--\n\nMissing @NonCPS annotation\n\nMake sure you add @NonCPS before you code block\n\n@NonCPS\nprivate void showChangeLogs(RunWrapper currentBuild) {\n...\n}\n\n Missing def\n\nMake sure there is no def is missing, for example\n\n for (change in changeLogSets) {\n        entries = change.items;\n        for (entry in entries) {\n          .....\n        }\n    }\n\nThe above code can result in the java.io.NotSerializableException: hudson.plugins.git.GitChangeSet\n\nRectifying this is just a matter of adding tye missing def before\ndef entries = change.items;\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/use-emoji-hugo",
+        "content": "---\ntitle: 'Use Emoji Hugo'\ndate: 2020-05-17T01:05:34+01:00\ndraft: false\ntags: ['hugo']\n---\n\nBy default, emoji is disabled in Hugo, to enable it, you need to set the enableEmoji to true in your config file.\n\nAfter that, you can enjoy using emoji of your choice; see the https://www.webfx.com/tools/emoji-cheat-sheet/ Sheet.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/value-object",
+        "content": "---\ntitle: 'Value Object'\ndate: 2020-09-13T10:20:08+01:00\ndraft: true\ntags: ['Clean Code']\nauthor: 'M. Awad'\n---\n\nYou can have certain logic associated with them e.g. validation, transformations or calculus\n\nfinal class EmailAddress\n{\n    private string $emailAddress;\n    private function __construct(string $emailAddress)\n    {\n        if (!filtervar($emailAddress, FILTERVALIDATE_EMAIL)) {\n            throw new InvalidArgumentException('...');\n        }\n        $this-emailAddress = $emailAddress;\n    }\n    public static function fromString(string $emailAddress): self\n    {\n        return new self($emailAddress);\n    }\n}\n\nBenefits\n\nUse VO when it adds meaning by using domain-specific terms (e.g. this isn’t just an int, it’s a Year)\n\n// without:\nMapLong, String\n// with:\nMapPersonId, PhoneNumber\n\nThey make our code safer, as the type system prevents us from doing stupid mistakes:\n\nPerson(String firstName, String lastName, String email) { ... }\nnew Person(\"john@doe.com\", \"John\", \"Doe\"); // compiles\nPerson(FirstName firstName, LastName lastName, Email email) { ... }\nnew Person(\n    new Email(\"john@doe.com\"),\n    new FirstName(\"John\"),\n    new LastName(\"Doe\")); // doesn't compile!\n\nNotice using email address as firstName in the above example\n\nThey give us the flexibility in terms of internal representation. \nThey also encapsulate related logic e.g. validation\n\nUsing assertions inside the constructor from one of the available assertion libraries (e.g. beberlei/assert2), or using native assertions\n\nuse Assert\\Assertion;\nfinal class Order\n{\n// ...\npublic function __construct(\nint $ebookId,\nstring $emailAddress,\nint $quantityOrdered,\nint $pricePerUnitInCents,\nint $orderAmountInCents\n) {\nAssertion::greaterThan($ebookId, 0);\nAssertion::email($emailAddress);\nAssertion::greaterThan($quantityOrdered, 0);\nAssertion::greaterThan($pricePerUnitInCents, 0);\nAssertion::greaterThan($orderAmountInCents, 0);\n$this-ebookId = $ebookId;\n$this-emailAddress = $emailAddress;\n$this-quantityOrdered = $quantityOrdered;\n$this-pricePerUnitInCents = $pricePerUnitInCents;\n$this-orderAmountInCents = $orderAmountInCents;\n}\n}\n\nThe code in Assertion::greaterThan() will throw an exception if the $ebookId\nis 0 or less. Likewise, if $emailAddress is a string, but doesn’t look like an email address\n\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/virtual-machine-files",
+        "content": "---\ntitle: \"Virtual Machine Files\"\ndate: 2020-10-18T17:25:18+01:00\ndraft: false\ntags: [\"virtualization\", \"devops\", \"vmware\"]\nauthor: \"M. Awad\"\n---\n Virtual machine itself consists of multiple files that reside on the data store itself.\n\nGlobal virtual machine files.\n.vmx : Virtual machine configuration file, the .vmx file stores all virtual machine settings you configure through the vSphere Web Client,  99% of the time, you don't need to edit this file manually.\n\n.vswap: as soon as you create a new virtual machine, it will create a new file, so if you have memory contention in the environment, the system can remove the data into the swap, to free space of the main memory of the server.\n\n.vnvram BIOS file contains the saved state of the BIOS of a virtual machine in a form similar to non-volatile memory. NVRAM file is  not subjected to power outages, so information is retained even when the computer is turned off; again, you don't need to mess with this file.\n\n.log: log files, which is very useful in troubleshooting if you want to know, for example, what is happening in the boot process of the virtual machine\n\n.vmtx:  .vmtx file is created when you convert a virtual machine to a template. The .vmtx file replaces the virtual machine configuration file (.vmx file). The extension's change makes sure the file is no longer treated as a .vmx file; therefore, typical virtual machine-specific tasks such as power-on or reset can no longer be executed against it.\n\n.vmdk:The .vmdk file (also called the descriptor) is a text file that contains configuration information about a VM's virtual hard drive. The descriptor file also contains a reference to the large data (flat-vmdk) files as well as information on the virtual disks drive sectors, heads, cylinders and disk adapter type.\n\n.flat-vmdk: The *-flat.vmdk file is the virtual equivalent of a physical hard drive; this is where raw data is written.\n\n Snapshot-related files\n\nWhen a snapshot is taken, multiple new files are created in the VM folder. These include .vmdk, -sparse.vmdk, .vmsd, and .vmsn, as shown at the following screenshot\n\n.vmdk: snapshot disk file\n*.snapshot.vmsm\n*.snapshot#.vmen memory content of the sanpshot \n\nSuspended-VM-related files\nwhen you put the VM in suspend mode\n.*vmss suspended file state\n.*vmem suspended snapshot memory state",
+        "tags": []
+    },
+    {
+        "uri": "/posts/wedriverio-trigger-event",
+        "content": "---\ntitle: \"How to trigger event with WebdriverIO\"\ndate: 2020-07-02T20:26:05+01:00\ndraft: false\ntags: [\"WebdriverIO\", \"automation\"]\nauthor: \"M. Awad\"\n---\n\nBesides Shadow DOM support, WebdriverIO has the edge when it comes to writing javascript through the common execute function, as you write javascript natively not as a string between dummy double or single quotes in the case of java and other languages, so you don't have to worry about syntax errors, along with leveraging autocompletion among other features that your IDE provides. !--more--\n\nSo How to trigger an event via WebdriverIO\n\nconst selectBox = await browser.$(\"select /\");\nawait selectBox.selectByVisibleText(\"Text of the option\");\n\nThe example above will work fine if all what you need is to submit a form, but wont notify any components that are listening for the change event. In order to to trigger this event we need to resort to the said execute function, there we can create and dispatch the event.\n\nconst selectBox = await browser.$(\"select /\");\nawait selectBox.selectByVisibleText(\"Text of the option\");\nawait browser.execute((selectBox) = {\n  var event = new Event(\"change\");\n  selectBox.dispatchEvent(event);\n}, selectBox);\n\nThe icing on the cake is you can reuse the selected element, in our case selectBox, in lieu of selecting it once again using old-fashioned javascript selector like\n\nvar el = document.querySelector(\"select\");\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/what-3mm-comb-represents",
+        "content": "---\ntitle: \"What 3mm in the back of you comb represents\"\ndate: 2020-06-11T21:02:41+01:00\ndraft: false\ntags: [\"lifestyle\"]\n---\n\nSo you're in market for a hair clipper, or you already bought one, and eye in this number at the back of the attachment combs in bewilderment! !--more--\n\nWhat the heck is 3mm? is that the digits you spent all of your life being asked for by your forgetful hair-dresser? hmm, not really.\n\nThe number you found in the back of the combs is the length of hair that will be left on the head after the clipper has passed over it.\n\nHere is a mapping between the hair length and the number so you can translate it with ease.\n\n| Number | Hair length |\n| ------ | :---------: |\n| .5     |    1.5mm    |\n| 1      |     3mm     |\n| 1.5    |    4.5mm    |\n| 2      |     6mm     |\n| 3      |    10mm     |\n| 4      |    13mm     |\n| 5      |    16mm     |\n| 6      |    19mm     |\n| 7      |    22mm     |\n| 8      |    25mm     |\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/what-is-esxi-host",
+        "content": "---\ntitle: \"What Is Esxi Host\"\ndate: 2020-10-17T23:31:12+01:00\ndraft: false\ntags: [\"virtualization\", \"devops\"]\nauthor: \"M. Awad\"\n---\n\nESXi host is the actual physical server that the virtual machines will run on. ESXi is the operating system that we install on this physical server.\n\nAn ESXi is a type one hypervisor, which means it can run natively on the hardware; it doesn't presuppose any other operating system running on this host to operate.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/what-is-KJ-in-the-back-of-food-packaging",
+        "content": "---\ntitle: \"What Is KJ in the Back of Food Packaging\"\ndate: 2020-06-28T21:34:37+01:00\ndraft: true\ntags: [\"\"]\nauthor: \"M. Awad\"\n---\n\nEnergy in broad is measured using a unit called Joules (J), which represents an amount or how much energy is transferred, it's not limited to food, even the electricity power is measured using the same uint 1 W = 1 J/s\n\nIn food industry how the energy is calculated\n\nHow much energy they provide depends on the amount of carbohydrate (sugars/starch), protein, fat and alcohol the food or drink contains, as well as the portion size.\n\n So what's teh difference between KJ and Cal\n\nFood energy used to be measured in Calories (Cal) and some countries like Australia still use those units.Cal has been supplanted by Cal in Australia over 4 now\n\nHow to Convert between kJ and Cal\n\nThe conversions are as follows:\n\n1 kJ = 0.2 Cal.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/what-is-that-small-barrel-in-some-cables-for",
+        "content": "---\ntitle: \"What Is That Small Barrel in Some Cables For\"\ndate: 2020-06-06T22:39:09+01:00\ndraft: true\ntags: [\"hardware\"]\n---\n\nIn a typical computer system found in a home or office, you normally see these \"Small Barrel\" on the mouse, keyboard and monitor cables. You can also find them on power supply cable for Raspberry pi) when it's used for audio uses an external transformer.\n\nThese \"Small Barrel\" are called ferrite beads, As the name itself implies it's made from ferrite.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/what-is-the-purpose-of-network-gateway",
+        "content": "---\ntitle: \"What Is the Purpose of Network Gateway\"\ndate: 2020-06-10T00:49:51+01:00\ndraft: true\ntags: [\"network\"]\n---\n\nA gateway is a hardware device that serves as a \"gate\" It acts as a link between two networks, for example your local network and the internet.\n\nThe classic example of a gateway is the router in our home or workplace.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/what-makes-for-order",
+        "content": "---\ntitle: 'What Makes for Order'\ndate: 2020-09-05T21:46:48+01:00\ndraft: true\ntags: ['Stock Market']\nauthor: 'M. Awad'\n---\n\nTicker The abbreviation of the company\n\nSide (Sale / Buy )\n\nType of order: Market order or Limit order\n\n  Market order: is to tell that you want to buy / sell the stock at the best available price in the current market available, no matter what is the price (time-sensitive ), it is widely considered the fastest and most reliable way to enter or exit a trade and provides the most likely method of getting in or out of a trade quickly.\n  Limit Order: at specific price or better (price-sensitive) the problem with the limit order if the price is going up you'll never gonna get it\n\nPrice\nQuantity (# shares)\n\nWhen to Use a Market Order\nMarket orders are well-suited for securities that are traded in very high volumes such as large-cap stocks, futures or ETFs. For example, market orders for the E-mini S&P or a stock such as Microsoft tend to fill very rapidly without issue\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/what-to-do-when-standing-desk-stop-going-up",
+        "content": "---\ntitle: \"What to Do When You Standing Desk Stop Going Up\"\ndate: 2020-06-06T00:48:37+01:00\ndraft: true\ntags: [\"health\", \"appliances\", \"workstation\"]\n---\n\nMost likely you need to reset you desk\n\nPress and hold the the down button and until desk reaches its lowest level then release.\nPress and hold the down button again, until the desk lower a little more, slightly rises and then stops.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/whatsApp-IM-reminder",
+        "content": "---\ntitle: \"Use WhatsApp as a Reminder\"\ndate: 2020-06-19T19:34:49+01:00\ndraft: false\ntags: [\"IM\", \"Apps\"]\n---\n\nSend yourself a reminder of an upcoming event or a to-do using Any.do app bot !--more--\n\nSay you're meeting Special Friend down the the city center at 5 pm, and you need to leave home by 4 to beat the traffic and not be late.\n\nMessage Anything.do a task .i.e \"dinner with a Special Friend\" You need to answer a couple of questions about the time\". You'll get an instance message from Any.do right on time.\n\nWorks best for folks who live with their WhatsApp running.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/why-we-put-battries-in-opposite-direction",
+        "content": "---\ntitle: \"Why We Put Batteries in Opposite Direction\"\ndate: 2020-07-01T19:11:45+01:00\ndraft: true\ntags: [\"\"]\nauthor: \"M. Awad\"\n---\n\nBecause they are wired in series, so each battery's positive terminal is connected to the next battery's negative terminal, to meet the power need of teh device, when batteries are connected in a series, they're linked together such that the positive terminal of one battery is connected to the negative terminal of another.\n\nThe total voltage across batteries connected in series is equal to the sum of their individual voltages.\n\nWhen a series of batteries is connected to a circuit, the same current will flow through all of the batteries,\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/working-with-plugins-jenkins",
+        "content": "---\ntitle: \"Working With Plugins Scripted Jenkins\"\ndate: 2020-05-31T16:56:29+01:00\ndraft: false\ntags: [\"jenkins\", \"groovy\", \"devops\"]\n---\n\nList all of the plugins you have in your instance\n\nWe will need to use for loop to iterate over the list of Jenkins.instance.pluginManager.plugins and print each plugin name\n\nfor(plugin in for(plugin in Jenkins.instance.pluginManager.plugins) {\n  println(plugin);\n}\n\nTo sort the plugins say by alphabetical order, because Jenkins.instance.pluginManager.plugins is read-only we need to clone plugins in a new list .i.e. sortedPlugins\n\nListString sortedPlugins = new ArrayListString(Jenkins.instance.pluginManager.plugins);\nsortedPlugins = sortedPlugins.sort{x - x.displayName.toLowerCase()}\nfor(plugin in sortedPlugins) {\n  println(plugin);\n}\n\n Check if a plugin is installed\n\ndef antPlugin = new ArrayListString(Jenkins.instance.pluginManager.plugins).find{x - x.displayName == 'Ant Plugin'};\nprintln(antPlugin == null ? \"Not installed\" : \"Installed\" );\n\nWe can take this step further and create function, how about isInstalled() with a string displayName argument\n\nBoolean isInstalled(String displayName) {\n\n\tdef plugin = new ArrayListString(Jenkins.instance.pluginManager.plugins).find{x - x.displayName == displayName};\n\treturn plugin != null;\n}\n\nprintln(isInstalled(\"Ant Plugin\") ?  \"Installed\" : \"Not installed\");\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/wrap-html-tag-in-vs-studio",
+        "content": "---\ntitle: \"Wrap html tag in vs studio\"\ndate: 2020-05-13T23:26:56+01:00\ndraft: false\ntags: [\"vs code\", \"productivity\"]\n---\n\nRather than every time you need to wrap an element or a group of elements, you create the element, cut and paste the inner tags, you may make use of a Wrap with Abbreviation a handy time-saver native feature of visual studio code\n\n!--more--\n\nHighlight the text text (optional)\nOpen command palette (usually ⌘ Command + Shift+ P)\nExecute Emmet: Wrap with Abbreviation\nEnter a tag div (or an abbreviation .wrapperp)\nHit Enter\n\nYou can create a keyboard shortcut for it to make it even better\n\nOpen Keyboard Shortcuts by typing ⌘ Command + K\n\nSearch for emmet wrap..\n\nClick the plus sign to the left of \"Emmet: Wrap with Abbreviation\"\n\nType your short cut of choice .e.g ⌥ Option + W\n\nHit Enter\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/wroking-with-styles-wordpress",
+        "content": "---\ntitle: 'Working With Styles Wordpress'\ndate: 2020-08-01T21:28:06+01:00\ndraft: true\ntags: ['wordpress']\nauthor: 'M. Awad'\n---\n\nWhen you're creating your theme, you may be tempted to add your styles hardcoded to your templates\n\nEnqueuing Styles\n\nIn your functions.php\n\nwpenqueuestyle('style', getstylesheeturi())\n\nstyle is just a unique name you cna name any thing else, wordpress uses it for depency and making sure\n\nLoading external stylesheet\n\nwpenqueuestyle('font-css', 'https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round');\n\nDependency, say you need file to load before another fiule\n\nwpenqueuestyle('style', getstylesheeturi(), ['font-css'] )\n\nVersion you cna leave it, but if you want to avaoid cahce while you're devolping you count on time\n\nwpenqueuestyle('style', getstylesheeturi(), ['font-css'], getthetime());\n\nit's common and good practice to group all of your registered styles under one function, and calling it when a specific event occurs, usually when the styles/scripts are enqueued\n\nfunction mythemethemestyles() {\n\twpenqueuestyle('font-css', 'https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round');\n\twpenqueuestyle('main-css', getstylesheeturi(), ['font-css'], getthetime());\n\n}\n\naddaction('wpenqueuescripts', 'mythemetheme_styles', 10);\n\nwpenqueuescripts Fires when scripts and styles are enqueued, Despite the name, wpenqueuescripts function works for both.\n",
+        "tags": []
+    },
+    {
+        "uri": "/posts/your-own-handwriting-as-a-font",
+        "content": "---\ntitle: \"Turn your own handwriting as a font\"\ndate: 2020-06-30T21:20:52+01:00\ndraft: false\ntags: [\"online-tools\"]\n---\n\nWeb site Calligraphr creates a computer font of your own handwriting. !--more--\n\nFill out in longhand the alphabet on a Calligraphr-provided template you print out.\nScan it in, make sure the file is at 150dpi to 300dpi.\nUpload to the site and preview your custom font and give your font a name, then pick the output format of your choice, either .ttf or .otf.\nDownload it to your machine.\nInstall and start using your new-found font.\n",
+        "tags": []
+    }
+]
